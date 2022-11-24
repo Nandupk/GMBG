@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Grease Monkey Barber Garage</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="css/typography.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="nav-header">
+<header class="header" >
+  <div class="header_title">Customers </div>
+  <div class="header_right d-flex align-items-center"> <a href="#" class="text-white"> <i class="fas fa-bell"></i> </a>
+    <div>
+      <div class="dropdown">
+        <button class="btn  dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Khasmir <i class="fas fa-angle-down"></i> <img src="img/user.png" class="user-login ms-2"> </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Login</a></li>
+          <li><a class="dropdown-item" href="#">Setting</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="side-baar-menu">
+  <div class="nav-side-baar text-center pt-3"> <img src="img/logo.svg" width="65">
+    <ul class="nav-side-baar-list m-0 d-flex flex-wrap">
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-th"></i></div>
+        <span>Dashboard</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="far fa-calendar-check"></i></div>
+        <span>Manage Bookings</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-cut"></i></div>
+        <span>Manage Hair Services</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-shopping-bag"></i></div>
+        <span>Manage Orders</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-dolly-flatbed"></i></div>
+        <span>My Inventory</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-user-friends"></i></div>
+        <span>Customers</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-user"></i></div>
+        <span>Employee</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-chart-bar"></i></div>
+        <span>My Reports</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-cog"></i></div>
+        <span>Settings</span> </a> </li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="box-card bg-danger order-tab">
+    <div class="header-table px-3 py-2">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h3 class="m-0 p-0 text-white font20"><u> ALL CUSTOMERS</u></h3>
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex justify-content-end">
+            <div class="serch-table">
+              <input type="text" class="form-control bg-gary" placeholder="Search">
+              <button class="serch-table-btn btn"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive ">
+      <table class="table table-dark table-striped m-0">
+        <thead>
+          <tr  >
+            <th >Username</th>
+            <th >Name</th>
+            <th >Email </th>
+            <th >Contact Number</th>
+            <th >Social Login <i class="fas fa-filter font10"></i></th>
+            <th ></th>
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr>
+            <td><div class="d-flex align-items-center">
+                <div class="order-img"> </div>
+                <div class="ps-3">
+                  <div class="font16">WAX HAIR</div>
+                  <div class="text-white"> <a href="#" class="text-white"> Edit </a> <span>|</span> <a class="text-white" href="#">Delete </a></div>
+                </div>
+              </div></td>
+            <td>Abel Tan</td>
+            <td>abeltan@gmail.com</td>
+            <td>+65912345567</td>
+            <td >No</td>
+              <td class="action-btn text-end pe-4">
+     <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#customersedit"> <i class="far fa-edit" ></i></a>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+
+           <tr>
+            <td><div class="d-flex align-items-center">
+                <div class="order-img"> </div>
+                <div class="ps-3">
+                  <div class="font16">WAX HAIR</div>
+                  <div class="text-white"> <a href="#" class="text-white"> Edit </a> <span>|</span> <a class="text-white" href="#">Delete </a></div>
+                </div>
+              </div></td>
+            <td>Abel Tan</td>
+            <td>abeltan@gmail.com</td>
+            <td>+65912345567</td>
+            <td >No</td>
+              <td class="action-btn text-end pe-4">
+     <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#customersedit"> <i class="far fa-edit" ></i></a>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+
+
+ <tr>
+            <td><div class="d-flex align-items-center">
+                <div class="order-img"> </div>
+                <div class="ps-3">
+                  <div class="font16">WAX HAIR</div>
+                  <div class="text-white"> <a href="#" class="text-white"> Edit </a> <span>|</span> <a class="text-white" href="#">Delete </a></div>
+                </div>
+              </div></td>
+            <td>Abel Tan</td>
+            <td>abeltan@gmail.com</td>
+            <td>+65912345567</td>
+            <td >No</td>
+              <td class="action-btn text-end pe-4">
+     <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#customersedit"> <i class="far fa-edit" ></i></a>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+
+
+ <tr>
+            <td><div class="d-flex align-items-center">
+                <div class="order-img"> </div>
+                <div class="ps-3">
+                  <div class="font16">WAX HAIR</div>
+                  <div class="text-white"> <a href="#" class="text-white"> Edit </a> <span>|</span> <a class="text-white" href="#">Delete </a></div>
+                </div>
+              </div></td>
+            <td>Abel Tan</td>
+            <td>abeltan@gmail.com</td>
+            <td>+65912345567</td>
+            <td >No</td>
+              <td class="action-btn text-end pe-4">
+     <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#customersedit"> <i class="far fa-edit" ></i></a>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+
+
+ <tr>
+            <td><div class="d-flex align-items-center">
+                <div class="order-img"> </div>
+                <div class="ps-3">
+                  <div class="font16">WAX HAIR</div>
+                  <div class="text-white"> <a href="#" class="text-white"> Edit </a> <span>|</span> <a class="text-white" href="#">Delete </a></div>
+                </div>
+              </div></td>
+            <td>Abel Tan</td>
+            <td>abeltan@gmail.com</td>
+            <td>+65912345567</td>
+            <td >No</td>
+              <td class="action-btn text-end pe-4">
+     <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#customersedit"> <i class="far fa-edit" ></i></a>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+
+
+ <tr>
+            <td><div class="d-flex align-items-center">
+                <div class="order-img"> </div>
+                <div class="ps-3">
+                  <div class="font16">WAX HAIR</div>
+                  <div class="text-white"> <a href="#" class="text-white"> Edit </a> <span>|</span> <a class="text-white" href="#">Delete </a></div>
+                </div>
+              </div></td>
+            <td>Abel Tan</td>
+            <td>abeltan@gmail.com</td>
+            <td>+65912345567</td>
+            <td >No</td>
+              <td class="action-btn text-end pe-4">
+     <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#customersedit"> <i class="far fa-edit" ></i></a>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+
+
+ <tr>
+            <td><div class="d-flex align-items-center">
+                <div class="order-img"> </div>
+                <div class="ps-3">
+                  <div class="font16">WAX HAIR</div>
+                  <div class="text-white"> <a href="#" class="text-white"> Edit </a> <span>|</span> <a class="text-white" href="#">Delete </a></div>
+                </div>
+              </div></td>
+            <td>Abel Tan</td>
+            <td>abeltan@gmail.com</td>
+            <td>+65912345567</td>
+            <td >No</td>
+              <td class="action-btn text-end pe-4">
+     <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#customersedit"> <i class="far fa-edit" ></i></a>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+
+
+ <tr>
+            <td><div class="d-flex align-items-center">
+                <div class="order-img"> </div>
+                <div class="ps-3">
+                  <div class="font16">WAX HAIR</div>
+                  <div class="text-white"> <a href="#" class="text-white"> Edit </a> <span>|</span> <a class="text-white" href="#">Delete </a></div>
+                </div>
+              </div></td>
+            <td>Abel Tan</td>
+            <td>abeltan@gmail.com</td>
+            <td>+65912345567</td>
+            <td >No</td>
+              <td class="action-btn text-end pe-4">
+     <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#customersedit"> <i class="far fa-edit" ></i></a>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+
+
+ <tr>
+            <td><div class="d-flex align-items-center">
+                <div class="order-img"> </div>
+                <div class="ps-3">
+                  <div class="font16">WAX HAIR</div>
+                  <div class="text-white"> <a href="#" class="text-white"> Edit </a> <span>|</span> <a class="text-white" href="#">Delete </a></div>
+                </div>
+              </div></td>
+            <td>Abel Tan</td>
+            <td>abeltan@gmail.com</td>
+            <td>+65912345567</td>
+            <td >No</td>
+              <td class="action-btn text-end pe-4">
+     <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#customersedit"> <i class="far fa-edit" ></i></a>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+
+
+ <tr>
+            <td><div class="d-flex align-items-center">
+                <div class="order-img"> </div>
+                <div class="ps-3">
+                  <div class="font16">WAX HAIR</div>
+                  <div class="text-white"> <a href="#" class="text-white"> Edit </a> <span>|</span> <a class="text-white" href="#">Delete </a></div>
+                </div>
+              </div></td>
+            <td>Abel Tan</td>
+            <td>abeltan@gmail.com</td>
+            <td>+65912345567</td>
+            <td >No</td>
+            <td class="action-btn text-end pe-4">
+     <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#customersedit"> <i class="far fa-edit" ></i></a>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+
+
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade " id="areyour" tabindex="-1" aria-labelledby="areyourLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content bg-dark font3 text-center px-lg-5 py-3">
+      <div class="modal-header border-0 justify-content-center mb-0 p-0">
+        <h5 class="modal-title font22">Are You Sure You Want to delete?</h5>
+      </div>
+      <div class="modal-body font16">
+        <p class="mb-2"> Once deleted it cannot be undone. </p>
+        <div class="d-flex justify-content-center pt-4">
+          <button class="btn btn btn-outline-secondary w-100 mx-1" data-bs-dismiss="modal" aria-label="Close">No</button>
+          <button class="mx-1 btn btn-info w-100">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="customersedit" tabindex="-1" aria-labelledby="areyourLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark   ">
+
+<div class="modal-header border-0 pb-0">
+        <h5 class="modal-title font1 d-flex align-items-center" id="exampleModalLabel">
+         <button type="button" class="text-ornge btn p-0" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-chevron-circle-left font22"></i></button> <span class="ps-3">Abel Tan</span> <a href="#" class="text-ornge ms-3 poppins font12">Edit</a></h5>
+        <div class="d-flex align-items-center"> <a href="#" class="text-ornge">Edit</a>
+          <button type="button" class="btn-close text-ornge btn-close-theme" data-bs-dismiss="modal" aria-label="Close"> <i class="fas fa-times-circle"></i> </button>
+        </div>
+      </div>
+
+    
+      <div class="modal-body ">
+
+      <div class="row">
+
+               <div class="col-lg-4 mb-2">
+            <label class="form-label font1 mb-1">Full Name</label>
+            <input type="text" value="Abel Tan" class="form-control bg-whtie poppins">
+          </div>
+
+
+          <div class="col-lg-4 mb-2">
+            <label class="form-label font1 mb-1">Username</label>
+            <input type="text" value="abeltan" class="form-control bg-whtie poppins">
+            <div class="font12 poppins pt-2 pe-lg-5 me-lg-4">User name cannot be changed. Only user can
+revise their username.</div>
+          </div>
+
+          <div class="col-lg-4 mb-2">
+            <label class="form-label font1 mb-1">Contact Number</label>
+            <input type="text" value="9182948925" class="form-control bg-whtie poppins">
+          </div>
+
+             <div class="col-lg-4 mb-2">
+            <label class="form-label font1 mb-1">Email Address</label>
+            <input type="text" value="abeltan@gmail.com" class="form-control bg-whtie poppins">
+          </div>
+
+             <div class="col-lg-4 mb-2">
+            <label class="form-label font1 mb-1">Role</label>
+            <input type="text" value="Customer" class="form-control bg-light-gary poppins">
+          </div>
+             <div class="col-lg-4 mb-2">
+            <label class="form-label font1 mb-1">Profile Picture</label>
+            <div class="no-img-profile"><i class="far fa-image text-danger "></i></div>
+           
+          </div>
+        </div>
+
+<hr>
+     
+
+
+
+
+<div class="box-car  order-tab">
+
+  <ul class="nav nav-tabs border-0 bg-danger" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active font16" id="new-order-tab" data-bs-toggle="tab" data-bs-target="#new-order" type="button" role="tab" aria-controls="new-order" aria-selected="true">Servicing Order History</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link font16" id="all-order-tab" data-bs-toggle="tab" data-bs-target="#all-order" type="button" role="tab" aria-controls="all-order" aria-selected="false">Purchase History</button>
+  </li>
+  <li class="nav-item tribe-card" role="presentation">
+    <button class="nav-link font16" id="processing-tab" data-bs-toggle="tab" data-bs-target="#processing" type="button" role="tab" aria-controls="processing" aria-selected="false">Tribe Card</button>
+  </li>
+
+   
+  
+
+</ul>
+
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="new-order" role="tabpanel" aria-labelledby="new-order-tab">
+      <div class="table-responsive ">
+      <table class="table table-dark table-striped m-0 shadow-lg">
+      <thead>
+        <tr class="font1" style="letter-spacing: 0.5px">
+          <th class="font1" >Job Order</th>
+          <th class="font1" >Appointment Date</th>
+          <th class="font1" >Time Slot</th>
+          <th class="font1">Service Type</th>
+          <th class="font1">Price</th>
+          <th class="font1">Employee Assigned</th>
+          <th class="font1"></th>
+         
+        </tr>
+      </thead>
+      <tbody>
+         <tr>
+          <td>1238495</td>
+          <td>07062020</td>
+          <td>12:00PM - 2:00PM</td>
+          <td>Cut </td>
+          <td>$58.00</td>
+          <td>KC</td>
+          <td><i class="fas fa-arrow-alt-circle-right font22 text-ornge"></i> </td>
+        </tr>
+
+         <tr>
+          <td>1238495</td>
+          <td>07062020</td>
+          <td>12:00PM - 2:00PM</td>
+          <td>Cut </td>
+          <td>$58.00</td>
+          <td>KC</td>
+          <td><i class="fas fa-arrow-alt-circle-right font22 text-ornge"></i> </td>
+        </tr>
+
+         <tr>
+          <td>1238495</td>
+          <td>07062020</td>
+          <td>12:00PM - 2:00PM</td>
+          <td>Cut </td>
+          <td>$58.00</td>
+          <td>KC</td>
+          <td><i class="fas fa-arrow-alt-circle-right font22 text-ornge"></i> </td>
+        </tr>
+
+         
+      </tbody>
+    </table>
+  </div>
+
+  <div class="table-breadcrumb d-flex align-items-center justify-content-center py-4"> <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> </div>
+
+  </div>
+  <div class="tab-pane fade" id="all-order" role="tabpanel" aria-labelledby="all-order-tab">
+     <div class="table-responsive ">
+      <table class="table table-dark table-striped m-0 shadow-lg">
+      <thead>
+        <tr class="font1" style="letter-spacing: 0.5px">
+          <th class="font1" >INV</th>
+          <th class="font1" >Date</th>
+          <th class="font1" width="35%" >Name</th>
+          <th class="font1">Status</th>
+          <th class="font1">ToTAL</th>
+          <th class="font1"></th>
+         
+        </tr>
+      </thead>
+      <tbody>
+         <tr>
+          <td>23297</td>
+          <td>24 Feb 21</td>
+          <td>Abel Tan</td>
+          <td><span class="table-span bg-dark50">Completed</span></td>
+          <td>$58.00</td>
+          <td><i class="fas fa-arrow-alt-circle-right font22 text-ornge"></i> </td>
+        </tr>
+
+        <tr>
+          <td>23297</td>
+          <td>24 Feb 21</td>
+          <td>Abel Tan</td>
+          <td><span class="table-span bg-dark50">Completed</span></td>
+          <td>$58.00</td>
+          <td><i class="fas fa-arrow-alt-circle-right font22 text-ornge"></i> </td>
+        </tr>
+
+        <tr>
+          <td>23297</td>
+          <td>24 Feb 21</td>
+          <td>Abel Tan</td>
+          <td><span class="table-span bg-dark50">Completed</span></td>
+          <td>$58.00</td>
+          <td><i class="fas fa-arrow-alt-circle-right font22 text-ornge"></i> </td>
+        </tr>
+
+         
+      </tbody>
+    </table>
+  </div>
+   <div class="table-breadcrumb d-flex align-items-center justify-content-center py-4"> <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> </div>
+</div>
+  <div class="tab-pane fade" id="processing" role="tabpanel" aria-labelledby="processing-tab">
+    <div class="table-responsive ">
+      <table class="table table-dark table-striped m-0 shadow-lg">
+      <thead>
+        <tr class="font1" style="letter-spacing: 0.5px">
+          <th class="font1" >Employee Name</th>
+          <th class="font1" >Total Stamps</th>
+          <th class="font1" width="35%" >Utilised</th>
+          <th class="font1">50% Claimed</th>
+          
+         
+        </tr>
+      </thead>
+      <tbody>
+         <tr>
+          <td>KC</td>
+          <td>5</td>
+          <td>3</td>
+          <td><span class="table-span bg-ornge">Completed</span></td>
+         
+        </tr>
+
+        <tr>
+          <td>KC</td>
+          <td>5</td>
+          <td>3</td>
+          <td><span class="table-span bg-dark50">Completed</span></td>
+         
+        </tr>
+
+
+<tr>
+          <td>KC</td>
+          <td>5</td>
+          <td>3</td>
+          <td><span class="table-span bg-dark50">Completed</span></td>
+         
+        </tr>
+
+
+    
+
+         
+      </tbody>
+    </table>
+  </div>
+   <div class="table-breadcrumb d-flex align-items-center justify-content-center py-4"> <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> </div>
+    
+      
+  </div>
+</div>
+
+
+
+</div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script
+        src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"
+        integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM="
+        crossorigin="anonymous"></script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

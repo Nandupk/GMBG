@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Grease Monkey Barber Garage</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="css/typography.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="nav-header">
+<header class="header" >
+  <div class="header_title">My Inventory </div>
+  <div class="header_right d-flex align-items-center"> <a href="#" class="text-white"> <i class="fas fa-bell"></i> </a>
+    <div>
+      <div class="dropdown">
+        <button class="btn  dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Khasmir <i class="fas fa-angle-down"></i> <img src="img/user.png" class="user-login ms-2"> </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Login</a></li>
+          <li><a class="dropdown-item" href="#">Setting</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="side-baar-menu">
+  <div class="nav-side-baar text-center pt-3"> <img src="img/logo.svg" width="65">
+    <ul class="nav-side-baar-list m-0 d-flex flex-wrap">
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-th"></i></div>
+        <span>Dashboard</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="far fa-calendar-check"></i></div>
+        <span>Manage Bookings</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-cut"></i></div>
+        <span>Manage Hair Services</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-shopping-bag"></i></div>
+        <span>Manage Orders</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-dolly-flatbed"></i></div>
+        <span>My Inventory</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-user-friends"></i></div>
+        <span>Customers</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-user"></i></div>
+        <span>Employee</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-chart-bar"></i></div>
+        <span>My Reports</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-cog"></i></div>
+        <span>Settings</span> </a> </li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="order-tab">
+        <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active ps-0" id="all-my-report-tab" data-bs-toggle="tab" data-bs-target="#all-my-report" type="button" role="tab" aria-controls="all-my-report" aria-selected="true">All</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link ps-0" id="service-booking-tab" data-bs-toggle="tab" data-bs-target="#service-booking" type="button" role="tab" aria-controls="service-booking" aria-selected="false">Service Booking Report</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link ps-0" id="products-purchase-tab" data-bs-toggle="tab" data-bs-target="#products-purchase" type="button" role="tab" aria-controls="products-purchase" aria-selected="false">Products Purchase Report</button>
+          </li>
+        </ul>
+        <div class="tab-content myreport-tab" id="myTabContent">
+          <div class="tab-pane fade active show" id="all-my-report" role="tabpanel" aria-labelledby="all-my-report-tab">
+            <div class="tabmin">
+              <div class="my-report-top p-3 pb-0">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <div class="text-white font20 me-2 ">All Revenue</div>
+                      <button class="btn bg-white d-flex align-items-center me-2"><img src="img/dot1.png" class="me-1"> Services Booking</button>
+                      <button class="btn bg-white d-flex align-items-center"><img src="img/dot2.png" class="me-1"> Products Purchased</button>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex">
+                      <select class="form-select form-select-sm me-3" aria-label=".form-select-sm example">
+                        <option selected>Jan</option>
+                        <option value="1">Feb</option>
+                        <option value="2">March</option>
+                      </select>
+                      <select class="form-select form-select-sm me-3" aria-label=".form-select-sm example">
+                        <option selected>2022</option>
+                        <option value="1">2023</option>
+                        <option value="2">2024</option>
+                      </select>
+                      <div class="my-report-tab">
+                        <ul class="nav nav-pills flex-nowrap m-0" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="Daily-tab" data-bs-toggle="pill" data-bs-target="#Daily" type="button" role="tab" aria-controls="Daily" aria-selected="true">Daily</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-Monthly-tab" data-bs-toggle="pill" data-bs-target="#pills-Monthly" type="button" role="tab" aria-controls="pills-Monthly" aria-selected="false">Monthly</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-Yearly-tab" data-bs-toggle="pill" data-bs-target="#pills-Yearly" type="button" role="tab" aria-controls="pills-Yearly" aria-selected="false">Yearly</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn text-white px-0">Export PDF <i class="fas fa-download"></i></button>
+              </div>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="Daily" role="tabpanel" aria-labelledby="Daily-tab">
+                 
+                    <canvas id="lineChart"></canvas>
+              
+                </div>
+                <div class="tab-pane fade" id="pills-Monthly" role="tabpanel" aria-labelledby="pills-Monthly-tab">...</div>
+                <div class="tab-pane fade" id="pills-Yearly" role="tabpanel" aria-labelledby="pills-Yearly-tab">...</div>
+              </div>
+            </div>
+            
+            
+            <div class="tabmin mt-3">
+              <div class="my-report-top p-3 pb-0">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <div class="text-white font20 me-2 ">All Revenue</div>
+                     
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex">
+                      <select class="form-select form-select-sm me-3" aria-label=".form-select-sm example">
+                        <option selected>Jan</option>
+                        <option value="1">Feb</option>
+                        <option value="2">March</option>
+                      </select>
+                      <select class="form-select form-select-sm me-3" aria-label=".form-select-sm example">
+                        <option selected>2022</option>
+                        <option value="1">2023</option>
+                        <option value="2">2024</option>
+                      </select>
+                      <div class="my-report-tab">
+                        <ul class="nav nav-pills flex-nowrap m-0" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="Daily2-tab" data-bs-toggle="pill" data-bs-target="#Daily2" type="button" role="tab" aria-controls="Daily2" aria-selected="true">Daily</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-Monthly2-tab" data-bs-toggle="pill" data-bs-target="#pills-Monthly2" type="button" role="tab" aria-controls="pills-Monthly2" aria-selected="false">Monthly</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-Yearly2-tab" data-bs-toggle="pill" data-bs-target="#pills-Yearly2" type="button" role="tab" aria-controls="pills-Yearly2" aria-selected="false">Yearly</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn text-white px-0">Export PDF <i class="fas fa-download"></i></button>
+              </div>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active px-3" id="Daily2" role="tabpanel" aria-labelledby="Daily2-tab">
+                
+                    <canvas id="myChart" ></canvas>
+                
+                </div>
+                <div class="tab-pane fade" id="pills-Monthly2" role="tabpanel" aria-labelledby="pills-Monthly2-tab">...</div>
+                <div class="tab-pane fade" id="pills-Yearly2" role="tabpanel" aria-labelledby="pills-Yearly2-tab">...</div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="service-booking" role="tabpanel" aria-labelledby="service-booking-tab"> 2 </div>
+          <div class="tab-pane fade" id="products-purchase" role="tabpanel" aria-labelledby="products-purchase-tab"> 3 </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 my-report-right">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title pb-0 text-dark font16 mb-0">Sale This Week (All Services)<br>
+            $2026.66</h4>
+          <div class="pie-chart" id="pie-chart1"></div>
+          <div class="row barChart-bottom pt-1 text-dark">
+            <div class="col-lg-4"><span class="archart-dot font14 pe-2"><i class="fas fa-circle" style="color: #f89646"></i></span> Service A</div>
+            <div class="col-lg-6"><span class="archart-dot pe-2"><i class="fas fa-circle"  style="color: #079f45"></i></span> Service B</div>
+            <div class="col-lg-4"> <span class="archart-dot pe-2"><i class="fas fa-circle"  style="color: #d50551"></i></span> Service C</div>
+            <div class="col-lg-6"> <span class="archart-dot pe-2"><i class="fas fa-circle"  style="color: #119da3"></i></span> Service D</div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-2">
+        <div class="card-body">
+          <h4 class="card-title pb-0 text-dark font16 mb-0">Sale This Week (All Services)<br>
+            $2026.66</h4>
+          <div class="pie-chart" id="pie-chart2"></div>
+          <div class="row barChart-bottom pt-1 text-dark font12">
+            <div class="col-lg-4"><span class="archart-dot font14 pe-2"><i class="fas fa-circle" style="color: #f89646"></i></span> Service A</div>
+            <div class="col-lg-6"><span class="archart-dot pe-2"><i class="fas fa-circle"  style="color: #079f45"></i></span> Service B</div>
+            <div class="col-lg-4"> <span class="archart-dot pe-2"><i class="fas fa-circle"  style="color: #d50551"></i></span> Service C</div>
+            <div class="col-lg-6"> <span class="archart-dot pe-2"><i class="fas fa-circle"  style="color: #119da3"></i></span> Service D</div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-2">
+        <div class="card-body text-center py-5">
+          <div class="text-center text-success">+16,24 %</div>
+          <div class="d-flex align-items-center justify-content-center text-dark"> <span><img src="img/up.svg"> </span> <span class="font26 ms-1">120</span> </div>
+          <div class="text-dark font18">New Customers Sign Up</div>
+          <div class="text-dark" style="line-height:10px">This Month Than Last Month</div>
+        </div>
+      </div>
+      <div class="card mt-2">
+        <div class="card-body text-center py-5">
+          <div class="text-center text-danger">+16,24 %</div>
+          <div class="d-flex align-items-center justify-content-center text-dark"> <span><img src="img/down.svg"> </span> <span class="font26 ms-1">4803</span> </div>
+          <div class="text-dark font18">New Customers Sign Up</div>
+          <div class="text-dark" style="line-height:10px">This Month Than Last Month</div>
+        </div>
+      </div>
+      
+
+      <div class="card mt-2 p-0 my-report-box">
+        <div class="card-body text-center py-3 text-white">
+          <div class="text-center text-danger">+16,24 %</div>
+          <div class="d-flex align-items-center justify-content-center "> <span class="font26 ms-1">$3948</span> </div>
+          <div class="font18">Most Service Booked</div>
+          <div class="" style="line-height:10px"> For This Month</div>
+        </div>
+        <div class="my-report-box-bot">
+          Service A
+        </div>
+      </div>
+
+
+        <div class="card mt-2 p-0 my-report-box">
+        <div class="card-body text-center py-3 text-white">
+          <div class="text-center text-danger">+16,24 %</div>
+          <div class="d-flex align-items-center justify-content-center "> <span class="font26 ms-1">$3948</span> </div>
+          <div class="font18">Most Service Booked</div>
+          <div class="" style="line-height:10px"> For This Month</div>
+        </div>
+        <div class="my-report-box-bot bg-danger">
+          Service A
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"  integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js'></script> 
+<script src="https://d3js.org/d3.v3.min.js"></script> 
+<script src="chart/allchart.js"></script> 
+<script type="text/javascript">
+  var ctx = document.getElementById("lineChart").getContext('2d');
+var lineChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sst", "Sun"],
+    datasets: [{
+      label: 'data-1',
+      data: [7, 4, 3, 8, 4, 12, 2],
+      backgroundColor: "rgba(26,213,152,0.7)"
+    }, {
+      label: 'data-2',
+      data: [2, 12, 5, 15, 5, 8, 2],
+      backgroundColor: "rgba(0,144,255,0.7)"
+    }]
+
+
+  }
+});
+
+</script> 
+<script type="text/javascript">
+  
+
+  var ctx = document.getElementById('myChart').getContext("2d");
+
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
+        datasets: [{
+            label: "Data",
+            borderColor: "#1ac4a5",
+            pointBorderColor: "#1ac4a5",
+            pointBackgroundColor: "#1ac4a5",
+            pointHoverBackgroundColor: "#1ac4a5",
+            pointHoverBorderColor: "#1ac4a5",
+            pointBorderWidth: 10,
+            pointHoverRadius: 10,
+            pointHoverBorderWidth: 1,
+            pointRadius: 3,
+            fill: false,
+            borderWidth: 4,
+            data: [100, 120, 150, 170, 180, 170, 160]
+        }]
+    },
+    options: {
+        legend: {
+            position: ""
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    fontColor: "#FFF",
+                    fontStyle: "noraml",
+                    beginAtZero: true,
+                    maxTicksLimit: 5,
+                    padding: 20
+                },
+                gridLines: {
+                    drawTicks: false,
+                    display: false
+                }
+
+            }],
+            xAxes: [{
+                gridLines: {
+                    zeroLineColor: "transparent"
+                },
+                ticks: {
+                    padding: 20,
+                    fontColor: "#FFF",
+                    fontStyle: "noraml"
+                }
+            }]
+        }
+    }
+});
+</script>
+</body>
+</html>

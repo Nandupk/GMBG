@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Grease Monkey Barber Garage</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="css/typography.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="nav-header">
+<header class="header" >
+  <div class="header_title">Employee </div>
+  <div class="header_right d-flex align-items-center"> <a href="#" class="text-white"> <i class="fas fa-bell"></i> </a>
+    <div>
+      <div class="dropdown">
+        <button class="btn  dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Khasmir <i class="fas fa-angle-down"></i> <img src="img/user.png" class="user-login ms-2"> </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Login</a></li>
+          <li><a class="dropdown-item" href="#">Setting</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="side-baar-menu">
+  <div class="nav-side-baar text-center pt-3"> <img src="img/logo.svg" width="65">
+    <ul class="nav-side-baar-list m-0 d-flex flex-wrap">
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-th"></i></div>
+        <span>Dashboard</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="far fa-calendar-check"></i></div>
+        <span>Manage Bookings</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-cut"></i></div>
+        <span>Manage Hair Services</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-shopping-bag"></i></div>
+        <span>Manage Orders</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-dolly-flatbed"></i></div>
+        <span>My Inventory</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-user-friends"></i></div>
+        <span>Customers</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-user"></i></div>
+        <span>Employee</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-chart-bar"></i></div>
+        <span>My Reports</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-cog"></i></div>
+        <span>Settings</span> </a> </li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+<div class="box-card   order-tab" style="background:#4f4f4f ">
+<div class="header-table px-3 py-2" >
+  <div class="row align-items-center">
+    <div class="col-lg-4">
+      <ul class="nav nav-tabs border-0 pt-1" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="new-order-tab" data-bs-toggle="tab" data-bs-target="#new-order" type="button" role="tab" aria-controls="new-order" aria-selected="true">ALL Employees</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="all-order-tab" data-bs-toggle="tab" data-bs-target="#all-order" type="button" role="tab" aria-controls="all-order" aria-selected="false">BARBERS</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="processing-tab" data-bs-toggle="tab" data-bs-target="#processing" type="button" role="tab" aria-controls="processing" aria-selected="false">ADMIN</button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-4">
+      <button class="btn btn me-4 px-lg-5 btn-light-ornge" data-bs-toggle="modal" data-bs-target="#exampleModal"> ADD NEW PRODUCT </button>
+    </div>
+    <div class="col-lg-4">
+      <div class="d-flex justify-content-end">
+        <div class="serch-table">
+          <input type="text" class="form-control bg-gary" placeholder="Search">
+          <button class="serch-table-btn btn"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="new-order" role="tabpanel" aria-labelledby="new-order-tab">
+    <div class="table-responsive">
+      <table class="table table-dark  m-0">
+        <thead>
+          <tr class="font1" >
+            <th class="radius-top bg-dark font1 font16" width="80" >PHOTO</th>
+            <th class="bg-dark font1 font16" >ID</th>
+            <th class="bg-dark font1 font16" >Name</th>
+            <th class="bg-dark font1 font16" >EMAIL</th>
+            <th  class="bg-dark font1 font16">CONTACT NUMBER</th>
+            <th class="bg-dark font1 font16" >USER TYPE</th>
+            <th class="bg-dark font1 font16" >Created ON</th>
+            <th class="radius-top-right bg-dark font1 font16" ></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-breadcrumb d-flex align-items-center justify-content-center pt-3 pb-4"> <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> </div>
+  </div>
+  <div class="tab-pane fade" id="all-order" role="tabpanel" aria-labelledby="all-order-tab">
+    <div class="table-responsive">
+      <table class="table table-dark  m-0">
+        <thead>
+          <tr class="font1" >
+            <th class="radius-top bg-dark font1 font16" width="80" >PHOTO</th>
+            <th class="bg-dark font1 font16" >ID</th>
+            <th class="bg-dark font1 font16" >Name</th>
+            <th class="bg-dark font1 font16" >EMAIL</th>
+            <th  class="bg-dark font1 font16">CONTACT NUMBER</th>
+            <th class="bg-dark font1 font16" >USER TYPE</th>
+            <th class="bg-dark font1 font16" >Created ON</th>
+            <th class="radius-top-right bg-dark font1 font16" ></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-breadcrumb d-flex align-items-center justify-content-center pt-3 pb-4"> <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> </div>
+  </div>
+  <div class="tab-pane fade" id="processing" role="tabpanel" aria-labelledby="processing-tab">
+    <div class="table-responsive">
+      <table class="table table-dark  m-0">
+        <thead>
+          <tr class="font1" >
+            <th class="radius-top bg-dark font1 font16" width="80" >PHOTO</th>
+            <th class="bg-dark font1 font16" >ID</th>
+            <th class="bg-dark font1 font16" >Name</th>
+            <th class="bg-dark font1 font16" >EMAIL</th>
+            <th  class="bg-dark font1 font16">CONTACT NUMBER</th>
+            <th class="bg-dark font1 font16" >USER TYPE</th>
+            <th class="bg-dark font1 font16" >Created ON</th>
+            <th class="radius-top-right bg-dark font1 font16" ></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td><div class="order-img-employee"><img src="img/IMG_5169.png"> </div></td>
+            <td>100063</td>
+            <td>Jason Mendoza</td>
+            <td>jostianng@gmail.ccm</td>
+            <td>85229235</td>
+            <td >Barber</td>
+            <td >01 Mar 21</td>
+            <td class="action-btn text-end pe-4"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-breadcrumb d-flex align-items-center justify-content-center pt-3 pb-4"> <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade " id="areyour" tabindex="-1" aria-labelledby="areyourLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content bg-dark font3 text-center px-lg-5 py-3">
+      <div class="modal-header border-0 justify-content-center mb-0 p-0">
+        <h5 class="modal-title font1 font28">Are you sure you want to deactivate this employee's account?</h5>
+      </div>
+      <div class="modal-body font16">
+        <p class="mb-2"> Once deleted it cannot be undone. </p>
+        <div class="d-flex justify-content-center pt-4">
+          <button class="btn btn btn-outline-secondary w-100 mx-1" data-bs-dismiss="modal" aria-label="Close">No</button>
+          <button class="mx-1 btn btn-info w-100">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade add-serices poppins" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content modal-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="exampleModalLabel">Create New Employee</h5>
+        <div class="d-flex align-items-center">
+  <button type="button" class="btn-close text-ornge btn-close-theme" data-bs-dismiss="modal" aria-label="Close"> <i class="fas fa-times-circle"></i> </button>
+        </div>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="row">
+          <div class="col-lg-4 mb-2">
+            <label  class="form-label">User ID</label>
+            <input type="text" value=""  class="form-control bg-white" >
+            <div class="text-white"><u>Generate ID</u></div>
+          </div>
+          <div class="col-lg-4 mb-2">
+            <label  class="form-label">Full Name</label>
+            <input type="text" value=""  class="form-control bg-white" >
+          </div>
+          <div class="col-lg-4 mb-2">
+            <label  class="form-label">Email Address</label>
+            <input type="text" value=""  class="form-control bg-white" >
+          </div>
+      
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-6 mb-2">
+              <label  class="form-label">Password</label>
+              <div class="setting-control control-passowrd pb-0">
+                <input type="passwrod" value="*******" name="" class="form-control h-40 bg-white">
+                <button class="btn" style="top:-1px"><img src="img/hide.svg"></button>
+                <div><a href="#" class="text-white font12 pt-1"><u> Generate Password</u></a></div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-2">
+              <label  class="form-label">Contact Number</label>
+              <input type="" value=""  class="form-control bg-white" >
+            </div>
+            <div class="col-lg-6 mb-2">
+              <label  class="form-label">Role</label>
+              <select class="form-select form-control bg-gary" aria-label="Default select example">
+                <option selected>Select Role</option>
+                <option value="1">$30</option>
+                <option value="2">$35</option>
+                <option value="3">$40</option>
+              </select>
+            </div>
+            <div class="col-lg-6 mb-2">
+              <label  class="form-label">Branch</label>
+              <select class="form-select form-control bg-gary" aria-label="Default select example">
+                <option selected>Select Branch</option>
+                <option value="1">$30</option>
+                <option value="2">$35</option>
+                <option value="3">$40</option>
+              </select>
+            </div>
+      
+        </div>
+        </div>
+            <div class="col-lg-4 mb-2">
+            <label  class="form-label">Manage Rights</label>
+            <div class="mb-2 form-check checkbox-row d-flex align-items-center ps-0">
+              <input type="checkbox" checked="" class="form-check-input m-0" id="exampleCheck1">
+              <label class="form-check-label ps-2" for="exampleCheck1">Booking Module</label>
+            </div>
+            <div class="mb-2 form-check checkbox-row d-flex align-items-center ps-0">
+              <input type="checkbox"  class="form-check-input m-0" id="exampleCheck2">
+              <label class="form-check-label ps-2" for="exampleCheck2">Employee Module</label>
+            </div>
+            <div class="mb-2 form-check checkbox-row d-flex align-items-center ps-0">
+              <input type="checkbox"  class="form-check-input m-0" id="exampleCheck3">
+              <label class="form-check-label ps-2" for="exampleCheck3">Orders Module</label>
+            </div>
+          </div>
+ 
+          <div class="col-lg-12  text-center pt-lg-5 pb-4">
+            <button class="btn btn-ornge min-w-200">Create account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

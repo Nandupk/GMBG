@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Grease Monkey Barber Garage</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="css/typography.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="nav-header">
+<header class="header" >
+  <div class="header_title">Manage Hair Services </div>
+  <div class="header_right d-flex align-items-center"> <a href="#" class="text-white"> <i class="fas fa-bell"></i> </a>
+    <div>
+      <div class="dropdown">
+        <button class="btn  dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Khasmir <i class="fas fa-angle-down"></i> <img src="img/user.png" class="user-login ms-2"> </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Login</a></li>
+          <li><a class="dropdown-item" href="#">Setting</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="side-baar-menu">
+  <div class="nav-side-baar text-center pt-3"> <img src="img/logo.svg" width="65">
+    <ul class="nav-side-baar-list m-0 d-flex flex-wrap">
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-th"></i></div>
+        <span>Dashboard</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="far fa-calendar-check"></i></div>
+        <span>Manage Bookings</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-cut"></i></div>
+        <span>Manage Hair Services</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-shopping-bag"></i></div>
+        <span>Manage Orders</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-dolly-flatbed"></i></div>
+        <span>My Inventory</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-user-friends"></i></div>
+        <span>Customers</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-user"></i></div>
+        <span>Employee</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-chart-bar"></i></div>
+        <span>My Reports</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-cog"></i></div>
+        <span>Settings</span> </a> </li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+<div class="box-card bg-danger">
+  <div class="header-table  py-3  px-4 ">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Hair Services <i class="fas fa-angle-down ps-2"></i> </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="manage-hair-services.html">Hair Service</a></li>
+            <li><a class="dropdown-item" href="package-hair-services.html">Packages</a></li>
+            <li><a class="dropdown-item" href="promotion-hair-services.html">Promotion</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="d-flex justify-content-end align-items-center">
+          <button class="btn btn-light me-4" data-bs-toggle="modal" data-bs-target="#exampleModal"> ADD NEW SERVICE <i class="fas fa-plus"></i> </button>
+          <div class="serch-table">
+            <input type="text" class="form-control bg-gary" placeholder="Search">
+            <button class="serch-table-btn btn"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-dark table-striped m-0">
+      <thead>
+        <tr>
+          <th width="18%">COVER</th>
+          <th width="20%">SERVICE NAME</th>
+          <th width="18%">Duration</th>
+          <th class="Price" width="18%">Price</th>
+          <th width="18%">Created ON</th>
+          <th width="80"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img class="avtar-img" src="img/photo.png"></td>
+          <td>Cut & wash</td>
+          <td>60 Mins</td>
+          <td>$40</td>
+          <td>@01 Mar 21</td>
+          <td class="action-btn text-end"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td><img class="avtar-img" src="img/photo.png"></td>
+          <td>Cut & wash</td>
+          <td>60 Mins</td>
+          <td>$40</td>
+          <td>@01 Mar 21</td>
+          <td class="action-btn text-end"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td><img class="avtar-img" src="img/photo.png"></td>
+          <td>Cut & wash</td>
+          <td>60 Mins</td>
+          <td>$40</td>
+          <td>@01 Mar 21</td>
+          <td class="action-btn text-end"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td><img class="avtar-img" src="img/photo.png"></td>
+          <td>Cut & wash</td>
+          <td>60 Mins</td>
+          <td>$40</td>
+          <td>@01 Mar 21</td>
+          <td class="action-btn text-end"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td><img class="avtar-img" src="img/photo.png"></td>
+          <td>Cut & wash</td>
+          <td>60 Mins</td>
+          <td>$40</td>
+          <td>@01 Mar 21</td>
+          <td class="action-btn text-end"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td><img class="avtar-img" src="img/photo.png"></td>
+          <td>Cut & wash</td>
+          <td>60 Mins</td>
+          <td>$40</td>
+          <td>@01 Mar 21</td>
+          <td class="action-btn text-end"><a href="#" class="me-2"><i class="far fa-edit"></i></a> 
+            <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td><img class="avtar-img" src="img/photo.png"></td>
+          <td>Cut & wash</td>
+          <td>60 Mins</td>
+          <td>$40</td>
+          <td>@01 Mar 21</td>
+          <td class="action-btn text-end"><a href="#" class="me-2"><i class="far fa-edit"></i></a> <a href="#" data-bs-toggle="modal" data-bs-target="#areyour"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="table-breadcrumb d-flex align-items-center justify-content-center pt-4"> <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> </div>
+
+<!-- Modal -->
+<div class="modal fade add-serices poppins" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content modal-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="exampleModalLabel">Cut & Wash</h5>
+        <div class="d-flex align-items-center"> <a href="#" class="text-ornge">Edit</a>
+          <button type="button" class="btn-close text-ornge btn-close-theme" data-bs-dismiss="modal" aria-label="Close"> <i class="fas fa-times-circle"></i> </button>
+        </div>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="row">
+          <div class="col-lg-7 mb-4">
+            <label  class="form-label">Service Name</label>
+            <input type="text" value="Cut & Wash"  class="form-control bg-gary" >
+          </div>
+          <div class="col-lg-5 mb-4">
+            <label  class="form-label">Duration (Mins)</label>
+            <input type="text" value="60 Mins"  class="form-control bg-gary" >
+          </div>
+         
+ </div> </div>
+  <div class="col-lg-3 mb-4">
+            <label  class="form-label">Price (SGD)</label>
+            <input type="text" value="$40"  class="form-control bg-gary" >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mb-4">
+            <label  class="form-label">Short Description of service</label>
+            <textarea class="form-control bg-gary" rows="4" placeholder="A hair cut accompanied with a wash"></textarea>
+          </div>
+          <div class="col-lg-5 mb-4">
+            <label  class="form-label">Terms and conditions</label>
+            <textarea class="form-control bg-gary" rows="4" placeholder=""></textarea>
+          </div>
+          <div class="col-lg-5 mb-4">
+            <label  class="form-label">Select Colour code for sales report</label>
+            <div class="d-flex color-pick">
+              <div class="form-check purple-color">
+                <input class="form-check-input" type="radio" value="" name="color-select" id="purple-color">
+                <label class="form-check-label" for="purple-color"> </label>
+              </div>
+              <div class="form-check yellow-color">
+                <input class="form-check-input" type="radio" value="" name="color-select" id="yellow-color">
+                <label class="form-check-label" for="yellow-color"> </label>
+              </div>
+              <div class="form-check sky-color">
+                <input class="form-check-input" type="radio" value="" name="color-select" id="sky-color">
+                <label class="form-check-label" for="sky-color"> </label>
+              </div>
+              <div class="form-check ornge-color">
+                <input class="form-check-input" type="radio" value="" name="color-select" id="ornge-color">
+                <label class="form-check-label" for="ornge-color"> </label>
+              </div>
+              <div class="form-check green-color">
+                <input class="form-check-input" type="radio" value="" name="color-select" id="green-color">
+                <label class="form-check-label" for="green-color"> </label>
+              </div>
+              <div class="form-check light-sky-color">
+                <input class="form-check-input" type="radio" value="" name="color-select" id="light-sky-color">
+                <label class="form-check-label" for="light-sky-color"> </label>
+              </div>
+              <div class="form-check pink-color">
+                <input class="form-check-input" type="radio" value="" name="color-select" id="pink-color">
+                <label class="form-check-label" for="pink-color"> </label>
+              </div>
+              <div class="form-check light-ornge-color">
+                <input class="form-check-input" type="radio" value="" name="color-select" id="light-ornge-color">
+                <label class="form-check-label" for="light-ornge-color"> </label>
+              </div>
+              <div class="form-check aquamarine-color">
+                <input class="form-check-input" type="radio" value="" name="color-select" id="aquamarine-color">
+                <label class="form-check-label" for="aquamarine-color"> </label>
+              </div>
+            </div>
+            <div class="form-check d-flex align-items-center pt-4">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label ms-2" for="flexRadioDefault1"> Tribe Card Eligibility </label>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <label  class="form-label">Upload Banner</label>
+
+
+           <!--- Before image Upload div Start---->
+            <div class="input-group mb-1">
+              <label class="input-group-text upload-img" for="inputGroupFile01">Upload</label>
+              <input type="file" class="form-control" id="inputGroupFile01">
+            </div>
+
+             <div class="fw-light fst-italic pt-1" style="font-size: 12px"> Your banner size has to be<br>
+              450px by 450px</div>
+             <!--- Before image Upload div and---->
+
+
+               <!--- After image Upload div Start---->
+               <div class="after-img-upload d-flex align-items-center">
+                 <img src="img/photo.png" width="45" height="45" class="after-img-upload-img">
+                 <a href="#" class="ms-4 text-ornge">Delete</a>
+
+               </div>
+           
+
+
+           
+          </div>
+          <div class="col-lg-6 mb-4">
+            <p> <small><i> Customers will be rewarded a tribe stamp per service booked. When 5 stamps have been collected,
+              Users may claim for 50% discount on a hair cut service. Select Tribe Card Eligibility should this service
+              Provides Tribe Card rewards.</i></small></p>
+          </div>
+          <div class="col-lg-12 ">
+            <button class="btn btn-ornge min-w-200">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade " id="areyour" tabindex="-1" aria-labelledby="areyourLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content bg-dark font3 text-center px-lg-5 py-5">
+      <div class="modal-header border-0 justify-content-center mb-0 p-0">
+        <h5 class="modal-title font22">Are You Sure You Want to delete?</h5>
+      
+      </div>
+      <div class="modal-body font16">
+          <p class="mb-2">  Once deleted it cannot be undone. </p>
+      <p class="mb-2">  The customer will be notified of their booking cancellation through the app.</p>
+        <div class="d-flex justify-content-center pt-4">
+        <button class="btn btn btn-outline-secondary w-100 mx-3" data-bs-dismiss="modal" aria-label="Close">No</button>  <button class="mx-3 btn btn-info w-100">Yes</button>
+        </div>
+      </div>
+   
+    </div>
+  </div>
+</div>
+
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>

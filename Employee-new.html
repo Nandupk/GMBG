@@ -1,0 +1,1240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Grease Monkey Barber Garage</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css'>
+<link href="css/typography.css" rel="stylesheet">
+<link href="scrollbar/perfect-scrollbar.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="nav-header">
+<header class="header" >
+  <div class="header_title">Employee </div>
+  <div class="header_right d-flex align-items-center"> <a href="#" class="text-white"> <i class="fas fa-bell"></i> </a>
+    <div>
+      <div class="dropdown">
+        <button class="btn  dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Khasmir <i class="fas fa-angle-down"></i> <img src="img/user.png" class="user-login ms-2"> </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Login</a></li>
+          <li><a class="dropdown-item" href="#">Setting</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="side-baar-menu">
+  <div class="nav-side-baar text-center pt-3"> <img src="img/logo.svg" width="65">
+    <ul class="nav-side-baar-list m-0 d-flex flex-wrap">
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-th"></i></div>
+        <span>Dashboard</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="far fa-calendar-check"></i></div>
+        <span>Manage Bookings</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-cut"></i></div>
+        <span>Manage Hair Services</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-shopping-bag"></i></div>
+        <span>Manage Orders</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-dolly-flatbed"></i></div>
+        <span>My Inventory</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-user-friends"></i></div>
+        <span>Customers</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-user"></i></div>
+        <span>Employee</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-chart-bar"></i></div>
+        <span>My Reports</span> </a> </li>
+      <li> <a href="#">
+        <div class="nav-icon"><i class="fas fa-cog"></i></div>
+        <span>Settings</span> </a> </li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="row">
+    <div class="col-md-7">
+      <div class="d-flex flex-wrap">
+        <div class="Manage-booking-top-left poppins d-flex align-items-center flex-wrap top-left-employee">
+          <div style="min-width:130px">Attendance Legend:</div>
+          <a href="#">Checked In</a> <a href="#">Checked out</a> <a href="#">Not Started Working</a> <a href="#">Did not check in/out</a> </div>
+        <div class="Manage-booking-top-left poppins d-flex align-items-center flex-wrap  top-left-employee-bottom">
+          <div style="min-width:130px">Leave Legend:</div>
+          <a href="#">Pending</a> <a href="#">Approved</a> </div>
+      </div>
+    </div>
+    <div class="col-md-5 d-flex align-items-center justify-content-end">
+      <div class=" d-flex angle-button">
+        <button class="btn text-white"><i class="fas fa-angle-left"></i></button>
+        <button class="btn text-white border-start"><i class="fas fa-angle-right"></i></button>
+      </div>
+      <button class="btn calendar-btn bg-gary font3" data-bs-toggle="modal" data-bs-target="#select-date"> 20 Jan 2022 <i class="fas fa-calendar-alt text-danger font18 ps-3"></i></button>
+      <a href="#" class="text-white font18 ms-2" style="text-decoration: none;"> View All Employees <i class="fas fa-angle-right"></i></a> </div>
+  </div>
+  <div class="row poppins align-items-center py-3">
+    <div class="col-5"><a href="manage-bookings-configure-schedule.html" class="text-white">Configure Schedule</a> </div>
+    <div class="col-7 text-end"><a href="manage-bookings-create-New-Notes.html" class="text-white me-3">Add Notes</a> <a href="#" class="text-white">Manage location</a> </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 manage-bookings-sidebaar ">
+      <div class="bookings-sidebaar-search poppins">
+        <input type="" placeholder="Search Job, booking, appointment" class="form-control" name="">
+        <button class="btn text-white"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="bookings-sidebaar-two border p-3 mt-3">
+        <div class="text-white font16">Categories</div>
+        <div class="checkbox-row d-flex justify-content-between align-items-center pt-2">
+          <div class="pt-1">All</div>
+          <input type="checkbox" checked="" class="form-check-input m-0" >
+        </div>
+        <div class="checkbox-row d-flex justify-content-between align-items-center pt-1">
+          <div class="pt-1">New booking</div>
+          <input type="checkbox" class="form-check-input m-0" >
+        </div>
+        <div class="checkbox-row d-flex justify-content-between align-items-center pt-1">
+          <div class="pt-1">Started</div>
+          <input type="checkbox" class="form-check-input m-0" >
+        </div>
+        <div class="checkbox-row d-flex justify-content-between align-items-center pt-1">
+          <div class="pt-1">Completed</div>
+          <input type="checkbox" class="form-check-input m-0" >
+        </div>
+        <div class="checkbox-row d-flex justify-content-between align-items-center pt-1">
+          <div class="pt-1">Notes</div>
+          <input type="checkbox" class="form-check-input m-0" >
+        </div>
+        <div class="newbooking-just scrollbar-theme just-empl">
+          <div class="text-white font16">New Bookings (Just In)</div>
+          <div class="notes-box-row-just">
+            <div class="notes-box-row-just-top">
+              <div class="poppins text-white"> Wednesday, 10 August 2021</div>
+              <div class="font1 font16"> 12:00PM</div>
+            </div>
+            <div class="notes-box poppins text-white cursor-pointer" data-bs-toggle="modal"  data-bs-target="#myModal1">
+              <div class="font14"> Jason Lim</div>
+              <div class="d-flex justify-content-between">
+                <div class="notes-box-left">
+                  <table class="border-0" cellpadding="5">
+                    <tr>
+                      <td>Barber</td>
+                      <td>KEITH</td>
+                    </tr>
+                    <tr>
+                      <td>Service</td>
+                      <td>Cut & WASH</td>
+                    </tr>
+                    <tr>
+                      <td>Add On</td>
+                      <td>NIL</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="notes-box-row-just">
+            <div class="notes-box-row-just-top">
+              <div class="poppins text-white"> Wednesday, 10 August 2021</div>
+              <div class="font1 font16"> 12:00PM</div>
+            </div>
+            <div class="notes-box poppins text-white">
+              <div class="font14"> Jason Lim</div>
+              <div class="d-flex justify-content-between">
+                <div class="notes-box-left">
+                  <table class="border-0" cellpadding="5">
+                    <tr>
+                      <td>Barber</td>
+                      <td>KEITH</td>
+                    </tr>
+                    <tr>
+                      <td>Service</td>
+                      <td>Cut & WASH</td>
+                    </tr>
+                    <tr>
+                      <td>Add On</td>
+                      <td>NIL</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="notes-box-row-just">
+            <div class="notes-box-row-just-top">
+              <div class="poppins text-white"> Wednesday, 10 August 2021</div>
+              <div class="font1 font16"> 12:00PM</div>
+            </div>
+            <div class="notes-box poppins text-white">
+              <div class="font14"> Jason Lim</div>
+              <div class="d-flex justify-content-between">
+                <div class="notes-box-left">
+                  <table class="border-0" cellpadding="5">
+                    <tr>
+                      <td>Barber</td>
+                      <td>KEITH</td>
+                    </tr>
+                    <tr>
+                      <td>Service</td>
+                      <td>Cut & WASH</td>
+                    </tr>
+                    <tr>
+                      <td>Add On</td>
+                      <td>NIL</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="notes-box-row-just">
+            <div class="notes-box-row-just-top">
+              <div class="poppins text-white"> Wednesday, 10 August 2021</div>
+              <div class="font1 font16"> 12:00PM</div>
+            </div>
+            <div class="notes-box poppins text-white">
+              <div class="font14"> Jason Lim</div>
+              <div class="d-flex justify-content-between">
+                <div class="notes-box-left">
+                  <table class="border-0" cellpadding="5">
+                    <tr>
+                      <td>Barber</td>
+                      <td>KEITH</td>
+                    </tr>
+                    <tr>
+                      <td>Service</td>
+                      <td>Cut & WASH</td>
+                    </tr>
+                    <tr>
+                      <td>Add On</td>
+                      <td>NIL</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9 manage-bookings-right">
+      <ul class="nav nav-pills mb-3 d-flex flex-nowrap configure-schedule-tab font1 shadow" id="pills-tab" role="tablist">
+        <li class="nav-item w-100" role="presentation">
+          <button class="nav-link active w-100 font16" id="pills-mayo-street-tab" data-bs-toggle="pill" data-bs-target="#pills-mayo-street" type="button" role="tab" aria-controls="pills-mayo-street" aria-selected="true">11 Mayo Street</button>
+        </li>
+        <li class="nav-item w-100" role="presentation">
+          <button class="nav-link w-100 font16" id="pills-bali-lane-tab" data-bs-toggle="pill" data-bs-target="#pills-bali-lane" type="button" role="tab" aria-controls="pills-bali-lane" aria-selected="false">22 Bali Lane</button>
+        </li>
+      </ul>
+      <div class="tab-content poppins pills-tabContent-theme employoyeetab" id="pills-tabContent">
+        <div class="tab-pane fade show active " id="pills-mayo-street" role="tabpanel" aria-labelledby="pills-mayo-street-tab">
+          <div class="scrollbar-theme2 box-scrollbar employee-table">
+     <table cellpadding="5" class="table-booking">
+              <tr  class="timebox-row">
+                <th ><div style="width:70px" class="time-box">Employee</div></th>
+                <th> <div class="time-box">20 Jan</div></th>
+                <th><div class="time-box">21 Jan</div></th>
+                <th><div class="time-box">22 Jan</div></th>
+                <th><div class="time-box">23 Jan</div></th>
+                <th><div class="time-box">24 Jan</div></th>
+                <th><div class="time-box">25 Jan</div></th>
+                <th><div class="time-box">26 Jan</div></th>
+              </tr>
+              <tr class="box-row-flex">
+                <td>Bracken</td>
+                <td colspan="2" class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub cursor-pointer employee-tab-bg2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+                
+                <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub ">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+              <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+             <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+                 <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+              </tr>
+
+              <tr class="box-row-flex">
+                <td>KC</td>
+                <td  class="box-row-flex-box ">
+                    <div class="box-row-flex-box-sub cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal employee-tab-bg2" >
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+                
+                <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub employee-tab-bg1">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+              <td class="box-row-flex-box" colspan="2">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+             <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+                 <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub manage-booking-gb-5">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+              </tr>
+
+                            <tr class="box-row-flex">
+                <td>Keith</td>
+                <td  class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub cursor-pointer employee-tab-bg2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+                
+                <td colspan="2" class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub employee-tab-bg5" style=" width:80%">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+              <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+             <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+                 <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+              </tr>
+                            <tr class="box-row-flex">
+                <td>Dil</td>
+                <td colspan="2" class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub cursor-pointer employee-tab-bg6" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+                
+                <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub manage-booking-gb-2">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+              <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+             <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+                 <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                <td class="box-row-flex-box">
+                    <div class="box-row-flex-box-sub">
+                      <div class="notes-box poppins">
+                        <div class="font14"> Jason Lim</div>
+                        <div class="d-flex justify-content-between">
+                          <div class="notes-box-left">
+                            <table class="border-0" cellpadding="5">
+                              <tbody>
+                                <tr>
+                                  <td>Barber</td>
+                                  <td>KEITH</td>
+                                </tr>
+                                <tr>
+                                  <td>Service</td>
+                                  <td>Cut &amp; WASH</td>
+                                </tr>
+                                <tr>
+                                  <td>Add On</td>
+                                  <td>NIL</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+              </tr>
+            </table>
+         
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-bali-lane" role="tabpanel" aria-labelledby="pills-bali-lane-tab">22 Bali Lane</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade " id="select-date" tabindex="-1" aria-labelledby="areyourLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content bg-dark font3  px-lg-5 py-3 ">
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn-close text-ornge btn-close-theme" data-bs-dismiss="modal" aria-label="Close"> <i class="fas fa-times-circle"></i> </button>
+      </div>
+      <div class="modal-header border-0 justify-content-center mb-0 p-0 text-center">
+        <h5 class="modal-title font24 font1">Select Date to View</h5>
+      </div>
+      <div class="modal-body font16 datepicker-modal">
+        <div  class="calendar datepicker"></div>
+        <div class="px-lg-5 px-4 pt-3">
+          <div class="d-flex pb-3">
+            <select class="form-select mx-1 font14" aria-label="Default select example">
+              <option selected="">09:00AM</option>
+              <option value="1">10:00AM</option>
+              <option value="2">11:00AM</option>
+              <option value="3">12:00AM</option>
+            </select>
+            <select class="form-select mx-1 font14" aria-label="Default select example">
+              <option selected="">09:00AM</option>
+              <option value="1">10:00AM</option>
+              <option value="2">11:00AM</option>
+              <option value="3">12:00AM</option>
+            </select>
+          </div>
+          <button class="btn btn-danger w-100 shadow-lg">Show</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade add-serices poppins" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content modal-dark">
+      <div class="modal-header border-0">
+        <div class="d-flex">
+          <div class="text-white">
+            <p class="mb-1">Job Order No</p>
+            <button class="btn font12 py-1 bg-light-gary px-5 text-white">22345</button>
+          </div>
+          <div class="text-white ms-3">
+            <p class="mb-1">Status</p>
+            <button class="btn btn py-1 text-white btn-info px-4 font12">New Booking</button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn-close text-ornge btn-close-theme" data-bs-dismiss="modal" aria-label="Close"> <i class="fas fa-times-circle"></i> </button>
+        </div>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="row">
+          <div class="col-lg-4 mb-2">
+            <label  class="form-label">Customer Name</label>
+            <input type="text" value="Abel Tan"  class="form-control bg-gary"  >
+          </div>
+          <div class="col-lg-4 mb-2">
+            <label  class="form-label">Contact Number</label>
+            <input type="text" value="912345567"  class="form-control bg-gary" >
+          </div>
+          <div class="col-lg-4 mb-2">
+            <label  class="form-label">Email</label>
+            <input type="text" value="abeltan@gmail.com"  class="form-control bg-gary" >
+          </div>
+          <div class="col-lg-4 mb-2">
+            <label  class="form-label">Service</label>
+            <input type="text" value="Cut & Wash"  class="form-control bg-gary" >
+          </div>
+          <div class="col-lg-4 mb-2">
+            <label  class="form-label">Price </label>
+            <input type="text" value="$40.00"  class="form-control bg-gary" >
+          </div>
+          <div class="col-lg-4 mb-2">
+            <label  class="form-label ">Employee Assigned </label>
+            <input type="text" value="Keith"  class="form-control bg-gary" >
+          </div>
+          <div class="col-lg-4 mb-2">
+            <div class="row">
+              <div class="col-6">
+                <label  class="form-label">Appointment Date </label>
+                <input type="text" value="DD/MM/YYYY"  class="form-control date datepicker2" >
+              </div>
+              <div class="col-6">
+                <label  class="form-label">Time Slot </label>
+                <select class="form-select">
+                  <option selected="">09:00AM</option>
+                  <option>09:00AM</option>
+                  <option>09:00AM</option>
+                  <option>09:00AM</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-2">
+            <label  class="form-label">Location </label>
+            <input type="text" value="11 Mayo Street"  class="form-control bg-gary" >
+          </div>
+          <div class="col-lg-4 mb-2">
+            <label  class="form-label">Time Completed </label>
+            <input type="text" value=""  class="form-control bg-gary " >
+          </div>
+          <div class="col-lg-2 mb-2">
+            <label  class="form-label">Payment Terms </label>
+            <input type="text" value="Visa/Master"  class="form-control bg-gary py-1 h-auto" >
+          </div>
+          <div class="col-lg-12  pt-lg-5 pb-4">
+            <button class="btn btn-danger min-w-200 shadow-lg-light font14">Confirm Booking</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 1 --> 
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" data-bs-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content modal-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title font1 font24 px-lg-2" id="exampleModalLabel">Request Leave</h5>
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn-close text-ornge btn-close-theme" data-bs-dismiss="modal" aria-label="Close"> <i class="fas fa-times-circle"></i> </button>
+        </div>
+      </div>
+      <div class="modal-body pt-0 px-lg-4">
+        <div class="row poppins">
+          <div class="col-lg-4 mb-2">
+            <label class="form-label">Employee ID</label>
+            <input type="text" value="1234567" class="form-control">
+          
+          </div>
+          <div class="col-lg-4 mb-2">
+            <label class="form-label">Full Name of Employee</label>
+            <input type="text" value="Bracken" class="form-control">
+          </div>
+          <div class="col-lg-4">
+         
+          </div>
+
+                    <div class="col-lg-4 mb-2">
+            <label class="form-label">Role</label>
+            <input type="text" value="Barber" class="form-control" style="background:#cecece">
+          </div>
+
+
+          <div class="col-lg-4 mb-2">
+            <label class="form-label">Branch </label>
+            <input type="text" value="11 Mayo Street" class="form-control" style="background:#cecece">
+          </div>
+
+
+                    <div class="col-lg-4">
+            
+          </div>
+          <div class="col-lg-5 mb-2">
+            <div class="row">
+              <div class="col-lg-4 mb-2">
+            <label class="form-label">Type of request </label>
+            <input type="text" value="Full Day" class="form-control">
+          </div>
+
+              <div class="col-6 mb-2 col-lg-4">
+            <label class="form-label">Start date</label>
+            <input type="text" value="DD/MM/YYYY" class="form-control date datepicker2">
+          </div>
+
+          <div class="col-6 mb-2 col-lg-4">
+            <label class="form-label">End date</label>
+            <input type="text" value="DD/MM/YYYY" class="form-control date datepicker2">
+          </div>
+          </div>
+          </div>
+
+          <div class="col-lg-12 mb-2">
+            <label class="form-label">Reasoning </label>
+            <textarea class="form-control bg-gary" rows="5"> </textarea>
+           
+          </div>
+
+          <div class="col-lg-12 text-center pt-3">
+            <button class="btn btn-success min-w-200 py-2 me-3 font16 font1">Approve leave</button>
+             <button class="btn btn-danger min-w-200 py-2 font16 btn-next font1" style="background:#c52930 !important; border-color:#c52930 !important ">Reject leave</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- Modal 2 --> 
+
+<div class="modal fade" id="myModal3" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content modal-dark px-lg-1">
+      <div class="modal-header border-0 align-items-start">
+        <h5 class="modal-title font1" id="exampleModalLabel"><a href="#" class="btn-prev text-white me-3 font20"><i class="fas fa-chevron-circle-left"></i></a> Back</h5>
+
+       <div class="font1 font24 text-center text-white"> You are about to reject this requested leave.
+<br>
+Please provide a reason for the rejection below.</div>
+
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn-close text-ornge btn-close-theme" data-bs-dismiss="modal" aria-label="Close"> <i class="fas fa-times-circle"></i> </button>
+        </div>
+      </div>
+      <div class="modal-body pt-3">
+      
+       <div class="row text-white poppins">
+         <div class="col-lg-4">
+           Employee name: Bracken (Barber)<br>
+           Location: 11 Mayo Street
+         </div>
+         <div class="col-lg-6">
+           Type of leave: Full Day<br>
+          Date: 13/04/22 to 15/0422 
+         </div>
+       </div>
+<div class="mb-2 poppins pt-3">
+            <label class="form-label">Reasoning</label>
+            <textarea class="form-control" placeholder="Loreum……." rows="2"></textarea>
+       
+          
+          </div>
+           
+           <hr class="pt-1" style="opacity: 100">
+
+          <div class="mb-2 poppins">
+            <label class="form-label">Reason for rejection</label>
+            <textarea class="form-control" placeholder="No more available leaves and lack of manpower" rows="4"></textarea>
+       
+          
+          </div>
+
+               <div class="col-lg-12 text-center pt-3">
+      
+             <button class="btn btn-danger min-w-200 py-2 font16  font1" style="background:#c52930 !important; border-color:#c52930 !important ">Confirm Rejection</button>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+<script src="scrollbar/perfect-scrollbar.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js'></script> 
+<script type="text/javascript">
+ $( ".datepicker" ).datepicker({ firstDay: 1});
+</script> 
+<script>
+    new PerfectScrollbar('.scrollbar-theme');
+    new PerfectScrollbar('.scrollbar-theme2');
+  </script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js'></script> 
+<script type="text/javascript">
+  $(function(){
+  $('.datepicker2').datepicker();
+});
+</script>
+
+<script type="text/javascript">
+  $("div[id^='myModal']").each(function(){
+  
+  var currentModal = $(this);
+  
+  //click next
+  currentModal.find('.btn-next').click(function(){
+    currentModal.modal('hide');
+    currentModal.closest("div[id^='myModal']").nextAll("div[id^='myModal']").first().modal('show'); 
+  });
+  
+  //click prev
+  currentModal.find('.btn-prev').click(function(){
+    currentModal.modal('hide');
+    currentModal.closest("div[id^='myModal']").prevAll("div[id^='myModal']").first().modal('show'); 
+  });
+
+});
+
+</script>
+</body>
+</html>

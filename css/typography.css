@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('../fonts/BebasNeueBook.woff2') format('woff2'),
+        url('../fonts/BebasNeueBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Thin.woff2') format('woff2'),
+        url('../fonts/BebasNeue-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueBold.woff2') format('woff2'),
+        url('../fonts/BebasNeueBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueLight.woff2') format('woff2'),
+        url('../fonts/BebasNeueLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue.woff2') format('woff2'),
+        url('../fonts/BebasNeue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../Flaticon.eot");
+  src: url("../Flaticond41d.eot?#iefix") format("embedded-opentype"),
+       url("../Flaticon.woff") format("woff"),
+       url("../Flaticon.ttf") format("truetype"),
+       url("Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('../fonts/BebasNeueBook.woff2') format('woff2'),
+        url('../fonts/BebasNeueBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Thin.woff2') format('woff2'),
+        url('../fonts/BebasNeue-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueBold.woff2') format('woff2'),
+        url('../fonts/BebasNeueBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueLight.woff2') format('woff2'),
+        url('../fonts/BebasNeueLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue.woff2') format('woff2'),
+        url('../fonts/BebasNeue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticond41d.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 26px;
+font-style: normal;
+}
+
+.flaticon-application:before { content: "\f100"; }
+.flaticon-boy-hair-shape:before { content: "\f101"; }
+.flaticon-boy-happy-smile:before { content: "\f102"; }
+.flaticon-brush:before { content: "\f103"; }
+.flaticon-brush-tool:before { content: "\f104"; }
+.flaticon-circle:before { content: "\f105"; }
+.flaticon-cut:before { content: "\f106"; }
+.flaticon-cut-1:before { content: "\f107"; }
+.flaticon-hair:before { content: "\f108"; }
+.flaticon-hair-dryer-on:before { content: "\f109"; }
+.flaticon-japanese-candles:before { content: "\f10a"; }
+.flaticon-massage:before { content: "\f10b"; }
+.flaticon-mustache-shape:before { content: "\f10c"; }
+.flaticon-nail-file:before { content: "\f10d"; }
+.flaticon-one-comb:before { content: "\f10e"; }
+.flaticon-people:before { content: "\f10f"; }
+.flaticon-razor-hair-salon-tool:before { content: "\f110"; }
+.flaticon-scissor-and-comb:before { content: "\f111"; }
+.flaticon-scissors:before { content: "\f112"; }
+.flaticon-scissors-1:before { content: "\f113"; }
+.flaticon-scissors-2:before { content: "\f114"; }
+.flaticon-scissors-3:before { content: "\f115"; }
+.flaticon-scissors-4:before { content: "\f116"; }
+.flaticon-scissors-and-comb:before { content: "\f117"; }
+.flaticon-scissors-and-comb-1:before { content: "\f118"; }
+.flaticon-scissors-opened-tool:before { content: "\f119"; }
+.flaticon-tool:before { content: "\f11a"; }
+
+
+
+body{font-family:Bebas Neue; font-size: 13px; color:#fff; background-color:#313131; font-weight: 400}
+.font30{font-size:30px;}
+.font28{font-size:28px;}
+.font26{font-size:26px;}
+.font25{font-size:25px;}
+.font24{font-size:24px;}
+.font22{font-size:22px;}
+.font20{font-size:20px;}
+.font18{font-size:18px;}
+.font16{font-size:16px;}
+.font14{font-size:14px;}
+.font12{font-size:12px;}
+.font10 {
+	font-size: 10px;
+}
+.bg-danger{background:#801419 !important}
+.bg-dark{background:#292929 !important }
+.content-100{min-height:100vh}
+.modal-dark {
+	background: #313131 !important;
+}
+.modal-backdrop {
+	background-color: #FFF;
+}
+
+.poppins{font-family:poppins }
+.btn-light {
+	color: #444444 !important;
+}
+.font3{font-family:Montserrat}
+.font1{font-family:Bebas Neue !important}
+.text-danger {
+	color: #801419 !important;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #801419 !important;
+    border-color: #801419 !important;
+}
+
+.bg-dark50 {
+    background: #5c5c5c !important;
+}
+
+.btn-light-ornge {
+    background: #fcf8d2;
+}
+
+.bg-light-gary {
+    background: #d0d0d0;
+}
+
+.bg-light-dark {
+    background: #4f4f4f !important;
+}
+
+.btn-check:focus + .btn-info, .btn-info:focus {
+    color: #FFF;
+    background-color: #36b282;
+    border-color: #36b282;
+    box-shadow: none;
+}
+
+/*
+.btn-info {
+    color: #fff;
+    background-color: #1d8286 !important;
+    border-color: #1d8286 !important;
+}
+.btn-info:hover {
+    color: #FFF;
+    background-color: #0c5c60 !important;
+    border-color: #0c5c60 !important;
+}
+*/
+
+.btn-success {
+    color: #fff;
+    background-color: #2ace70 !important;
+    border-color: #2ace70 !important;
+}
+
+.text-white2{color:#FCF8D2 !important}
+
+.login-section .form-check-input {
+    width: 15px;
+    height: 15px;
+    margin-top: 0
+}
