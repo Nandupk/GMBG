@@ -1366,6 +1366,24 @@ width:175px;
 font-family:poppins 
 }
 
+
+
+.form-text-uppercase .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+ opacity: 1; /* Firefox */
+ font-family:Bebas Neue
+ 
+}
+.form-text-uppercase .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ 	font-family:Bebas Neue
+}
+.form-text-uppercase .form-control::-ms-input-placeholder { /* Microsoft Edge */
+ font-family:Bebas Neue
+}
+
+.form-text-uppercase .form-control{
+font-family:poppins 
+}
+
 .table-booking td {
 	vertical-align: top;
 }
