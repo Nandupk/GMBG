@@ -1,6 +1,3 @@
-
-
-
 .header {
 	width: calc(100% - 165px);
 	position: fixed;
@@ -183,7 +180,6 @@ tbody, td, tfoot, th, thead, tr {
 }
 .table > thead tr th {
 	font-weight: 400;
-	text-transform: uppercase;
 	letter-spacing: .5px;
 }
 .table-dark {
@@ -196,28 +192,20 @@ tbody, td, tfoot, th, thead, tr {
 .serch-table {
 	position: relative;
 }
-.serch-table input {
-    padding-right: 50px;
-    color: #7b1c20;
-    border-radius: 30px;
-    border: 0;
-    box-shadow: 0 0 10px #00000012;
-    min-width: 260px;
-    height: 40px;
-    font-size: 14px;
-    padding-top: 11px;
-}
+
 .header-table #dropdownMenuButton1 {
 	/* line-height: 22px; */
 	padding-top: 8px;
 	padding-bottom: 4px;
 }
 .serch-table .btn {
-    position: absolute;
-    right: 0;
-    top: 4px;
-    color: #7b1c20;
-    box-shadow: none !important;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #7b1c20;
+	box-shadow: none !important;
+	bottom: 0;
+	margin: auto;
 }
 .table-breadcrumb a {
 	background: #801419;
@@ -1394,8 +1382,88 @@ font-family:poppins
 .employee-tab-bg5{background:#2634d5 !important}
 .employee-tab-bg6{background:#db7a27 !important}
 
+.header-dropdwon .dropdown-menu {
+	background-color: #D05A5F;
+border-radius: 0px 0px 20px 20px;
+	width: 180px;
+	box-shadow: none;
+}
+.header-dropdwon .dropdown-menu .dropdown-item {
+font-size:18px;
+letter-spacing: 0px;
+color: #FFFFFF;
+font-weight:400
+}
+.header-dropdwon .dropdown-item:focus, .header-dropdwon .dropdown-item:hover {
+	color: #FFF;
+	background-color: transparent;
+}
 
+.serch-table input {
+	padding-right: 50px;
+	border-radius: 30px;
+	border: 0;
+	box-shadow: 0 0 10px #00000012;
+	font-size: 14px;
+	max-width: 260px;
+	background:#f4f4f4
+}
+.serch-table .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+ color: #7b1c20;
+ opacity: 1; /* Firefox */
+ font-family:Bebas Neue
+ 
+}
+ .serch-table .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ 	font-family:Bebas Neue
+ color: #7b1c20;
 
+}
+.serch-table .form-control::-ms-input-placeholder { /* Microsoft Edge */
+ color: #7b1c20;
+ font-family:Bebas Neue
+}
+
+.serch-table .form-control{
+font-family:poppins;
+color: #333;
+box-shadow: none !important; 
+}
+
+.filter-dropdown .dropdown-menu, .filter-dropdown #dropdownMenuButton1 {
+	width: 170px;
+	background: #FCF8D2;
+	box-shadow: none !important;
+}
+
+.filter-dropdown .dropdown-menu {
+	top: -5px !important;
+	border-radius: 0 0 5px 5px;
+	padding-bottom: 10px;
+}
+
+.filter-dropdown .dropdown-item {
+	color: #444444;
+	box-shadow: 0px 3px 6px #00000029;
+	border-radius: 5px;
+	width:88%;
+	margin: auto;
+	font-size: 16px;
+
+}
+
+.filter-dropdown .dropdown-item:hover{background: transparent;}
+.header-table .btn.btn-light {
+	background: #FCF8D2;
+	width: 170px;
+	box-shadow: 0px 3px 6px #00000029 !important;
+	border-radius: 3px;
+	font-size: 16px;
+	position: relative;
+}
+.font10 {
+	font-size: 10px !important;
+}
 @media (min-width: 992px) {
 .box-round {
 	border-radius: 15px;

@@ -15,9 +15,9 @@
   <div class="header_title">Manage Hair Services </div>
   <div class="header_right d-flex align-items-center"> <a href="#" class="text-white"> <i class="fas fa-bell"></i> </a>
     <div>
-      <div class="dropdown">
+      <div class="dropdown header-dropdwon ">
         <button class="btn  dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Khasmir <i class="fas fa-angle-down"></i> <img src="img/user.png" class="user-login ms-2"> </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item" href="#">Login</a></li>
           <li><a class="dropdown-item" href="#">Setting</a></li>
         </ul>
@@ -63,7 +63,7 @@
   <div class="header-table  py-3  px-4 ">
     <div class="row">
       <div class="col-lg-6">
-        <div class="dropdown">
+        <div class="dropdown filter-dropdown">
           <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Hair Services <i class="fas fa-angle-down ps-2"></i> </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li><a class="dropdown-item" href="manage-hair-services.html">Hair Service</a></li>
@@ -74,9 +74,9 @@
       </div>
       <div class="col-lg-6 ">
         <div class="d-flex justify-content-end align-items-center">
-          <button class="btn btn-light me-4" data-bs-toggle="modal" data-bs-target="#exampleModal"> ADD NEW SERVICE <i class="fas fa-plus"></i> </button>
+          <button class="btn btn-light me-4" data-bs-toggle="modal" data-bs-target="#exampleModal"> ADD NEW SERVICE <i class="fas fa-plus ms-3 font10"></i> </button>
           <div class="serch-table">
-            <input type="text" class="form-control bg-gary" placeholder="Search">
+            <input type="text" class="form-control" placeholder="Search">
             <button class="serch-table-btn btn"><i class="fas fa-search"></i></button>
           </div>
         </div>
@@ -87,12 +87,12 @@
     <table class="table table-dark table-striped m-0">
       <thead>
         <tr>
-          <th width="18%">COVER</th>
-          <th width="20%">SERVICE NAME</th>
+          <th width="18%" class="radius-top">Cover</th>
+          <th width="20%">Service Name</th>
           <th width="18%">Duration</th>
           <th class="Price" width="18%">Price</th>
           <th width="18%">Created ON</th>
-          <th width="80"></th>
+          <th width="80" class="radius-top-right"></th>
         </tr>
       </thead>
       <tbody>
