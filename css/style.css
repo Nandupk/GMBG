@@ -107,7 +107,7 @@ font-family:poppins
 .submit-btn {
 	background: #fcf8d2 !important;
 	min-width: 214px;
-	height: 54px;
+	height:50px;
 	border-radius: 16px;
 	font-size: 18px;
 	color: #24242C;
@@ -676,9 +676,10 @@ tbody, td, tfoot, th, thead, tr {
 
 	.bookings-sidebaar-search .form-control {
 	background: transparent;
-	font-size: 12px;
+	font-size: 11px;
 	height: 43px;
 	padding-right: 36px;
+	box-shadow: none !important;
 }
 .bookings-sidebaar-search{position: relative;}
 .bookings-sidebaar-search button {
@@ -694,7 +695,7 @@ tbody, td, tfoot, th, thead, tr {
 
 .checkbox-row .form-check-input {
 	 border-radius:2px !important; 
-	border: 1px solid;
+	border: 1px solid #fff;
 	background: transparent;
 }
 
@@ -1334,11 +1335,15 @@ width:175px;
 
 .box-scrollbar .ps__rail-x {
 	bottom: auto !important;
-	top:29px !important;
+	top: 29px !important;
 	height: 2px;
+	opacity: 100 !important;
+	border-radius: 3px;
 }
 .box-scrollbar .ps__thumb-x {
 	height: 2px !important;
+	bottom: 0;
+	background-color: #dc3d21;
 }
 .cursor-pointer{cursor: pointer;}
 
@@ -1491,6 +1496,20 @@ box-shadow: none !important;
 .opacity-3{opacity:0.3}
 .opacity-2{opacity:0.2}
 .opacity-1{opacity:0.1} 
+
+.avtar-img{width: 33px;
+height: 33px;
+border-radius: 5px;
+}
+
+.header-dropdwon #dropdownMenuButton1 {
+	display: flex;
+	align-items: center;
+}
+.header-dropdwon #dropdownMenuButton1 .fas.fa-angle-down {
+	padding-left: 5px;
+	margin-right: 5px;
+}
 
 @media (min-width: 992px) {
 .box-round {
