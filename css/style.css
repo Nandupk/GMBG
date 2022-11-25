@@ -1343,7 +1343,7 @@ width:175px;
 .box-scrollbar .ps__thumb-x {
 	height: 2px !important;
 	bottom: 0;
-	background-color: #dc3d21;
+	background-color: #dc3d21 ;
 }
 .cursor-pointer{cursor: pointer;}
 
