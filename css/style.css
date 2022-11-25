@@ -1511,6 +1511,15 @@ border-radius: 5px;
 	margin-right: 5px;
 }
 
+.yelloish-btn{
+	background: #FCF8D2 !important;
+	box-shadow: 0px 3px 6px #00000029 !important;
+}
+
+.my-inventory-tab .table-light {
+	--bs-table-bg: #F0F0F7;
+
+}
 @media (min-width: 992px) {
 .box-round {
 	border-radius: 15px;
