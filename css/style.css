@@ -775,14 +775,15 @@ tbody, td, tfoot, th, thead, tr {
 .setting-control .form-control {
 	height: 30px;
 	min-height: auto;
-	background: #eeeeee;
-	box-shadow: 0 0 5px #00000069;
-	border-radius: 5px;
+	background: #EEEEEE;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 3px;
 	padding-top: 8px;
+
 }
 
 .setting-label {
-	min-width: 135px;
+	min-width:200px;
 }
 .setting-control {
 	min-width: 360px;
@@ -1052,7 +1053,7 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 .col-bottom-sting {
-	width: 150px;
+	width: 165px;
 	margin-left: 4px;
 }
 .add-setting-modal .form-select {
@@ -1071,37 +1072,41 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 .col-bottom-sting .btn {
-	background: #888888;
-	width: 100%;
+	width: 159px;
+	height: 34px;
+	background: #888888 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000029;
+	border-radius: 3px;
 	color: #FFF;
-	font-size: 14px;
-	height: 30px;
+	font-size: 15px;
+	border: 0;
 }
 
-.checkbox-btn-row{margin-bottom: 5px;}
+.checkbox-btn-row{margin-bottom:7px;}
 .bottom-sting-checkbox .checkbox-row {
 	height: 34px;
 }
 
-
-
 .checkbox-btn-row .form-check-input {
 	margin: 0;
-	width: 25px;
-	height: 19px;
+	width: 22px;
+	height: 22px;
 	border-radius: 3px !important;
 	margin-right: 10px;
 	border: 0;
+	box-shadow: none !important;
 }
 .social-icon .btn {
-	min-width: 106px;
 	margin-left: 15px;
-	height:28px;
 	text-align: left;
-	padding-top:1px;
-	padding-bottom: 5px;
+	width: 156px;
+	height: 25px;
+	background: #EEEEEE 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000029;
+	border-radius: 3px;
+	color: #4F4F4F;
+	padding: 0 10px;
 }
-
 .social-icon i {
 	font-size:25px;
 }
@@ -1555,4 +1560,19 @@ justify-content: end;}
 	font-weight: normal;
 }
 
-.box-row-flex-box-sub .notes-box-right{font-family: Bebas Neue;}
+.box-row-flex-box-sub .notes-box-right{font-family:Bebas Neue;}
+
+.col-bottom-sting .form-select, .hair-services-to-provide .form-select {
+	width: 159px;
+	height: 34px;
+	background-color: #EEEEEE 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000029;
+	border-radius: 3px;
+	opacity: 1;
+	line-height: 0;
+	font-size: 15px;
+	margin-bottom:7px;
+	text-align: center;
+}
+.hair-services-to-provide .form-select{min-width:312px}
+.working-hours{width:196px;}
