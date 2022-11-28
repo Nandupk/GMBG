@@ -383,8 +383,6 @@ tbody, td, tfoot, th, thead, tr {
 	border: 0 !important;
 	background: transparent !important;
 	color: #FFF;
-	letter-spacing: 0.5px;
-	font-size: 16px;
 }
 .order-tab .nav-tabs .nav-item.show .nav-link, .order-tab .nav-tabs .nav-link.active {
 	color: #FFF;
@@ -394,13 +392,20 @@ tbody, td, tfoot, th, thead, tr {
 	text-decoration: underline;
 }
 .table-span {
-	background: #ff3434;
+	background: #FF3434;
 	border-radius: 30px;
-	padding: 3px 20px;
+	padding: 0px 17px;
 	text-align: center;
-	box-shadow: 0 4px 5px #0000003d;
+	box-shadow: 0px 3px 6px #00000029;
 	font-family: Montserrat;
 	font-size: 12px;
+	height: 21px;
+	display: flex;
+	width: 100px;
+	align-items: center;
+	justify-content: center;
+	line-height: 0;
+	letter-spacing: normal;
 }
 .bg-success {
 	background-color: #438035 !important;
@@ -417,8 +422,8 @@ tbody, td, tfoot, th, thead, tr {
 }
 .order-manger-title {
 	font-size: 20px;
-	font-weight: 300;
-	letter-spacing: 1px
+	font-weight: 400;
+	/* letter-spacing: 1px; */
 }
 .order-manger-title .fas {
 	font-size: 28px;
@@ -442,13 +447,13 @@ tbody, td, tfoot, th, thead, tr {
 	width: 50px;
 	height: 60px;
 	overflow: hidden;
-	background-color: #FFF;
+	background-color: #FFF8EB;
 }
 .order-img img {
 	width: 100%
 }
 .manage-order-bottom-top {
-	background: #FFF;
+	background: #FFF8EB;
 	padding: 30px 15px;
 	color: #333 !important;
 	border-radius: 5px;
@@ -838,11 +843,12 @@ border-radius: 3px;
 
 
 .no-img-profile {
-	width: 71px;
-	height: 74px;
-	border-radius: 18px;
+	width: 70px;
+height: 70px;
+background: #F7F7F7 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 15px;
 	text-align: center;
-	background: #FFF;
 	font-size:35px;
 	line-height:77px
 }
@@ -881,7 +887,7 @@ border-radius: 3px;
 	padding-bottom: 9px;
 }
 .order-status {
-	background: #FFF;
+	background: #FFF8EB;
 	width: 80px;
 	height: 80px;
 	/* margin-right: 71px; */
@@ -1542,6 +1548,24 @@ border-radius: 5px;
 	--bs-table-bg: #F0F0F7;
 
 }
+
+.manage-order-row .header-table {
+	background: #4F4F4F 0% 0% no-repeat padding-box;
+	border-radius: 15px 15px 0px 0px;
+}
+.carmen-wong-order .table-span {
+	width: 142px;
+	height: 26px;
+	letter-spacing: normal;
+}
+
+.bg-light-gray {
+	background-color: #F0F0F7 !important;
+}
+.bg-light {
+	background-color: #FFF8EB !important;
+}
+
 @media (min-width: 992px) {
 .box-round {
 	border-radius: 15px;
@@ -1557,10 +1581,10 @@ border-radius: 5px;
 	min-width: 100px;
 }
 
-.tribe-card{width: 70%;
-text-align: right;
-display: flex;
-justify-content: end;}
+.tribe-card {
+  position: absolute;
+  right: 15px;
+}
 .add-more a{margin-left: -50px}
 
 
@@ -1620,7 +1644,11 @@ justify-content: end;}
 #myModal3 .modal-xl {
 	max-width: 1090px;
 }
-
+.manage-order-bottom .btn.yelloish-btn {
+	min-width: 250px;
+	line-height: 21px;
+	box-shadow: 0px 3px 6px #00000029;
+}
 @media (max-width:767px) {
 .setting-control {
 	min-width: auto;
