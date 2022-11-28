@@ -1091,7 +1091,7 @@ border-radius: 3px;
 	border: 0;
 	box-shadow: none !important;
 }
-.social-icon .btn {
+.social-icon .form-control{
 	margin-left: 15px;
 	text-align: left;
 	width: 156px;
@@ -1101,6 +1101,7 @@ border-radius: 3px;
 	border-radius: 3px;
 	color: #4F4F4F;
 	padding: 0 10px;
+	min-height:auto
 }
 .social-icon i {
 	font-size:25px;
@@ -1562,7 +1563,7 @@ justify-content: end;}
 
 .box-row-flex-box-sub .notes-box-right{font-family:Bebas Neue;}
 
-.col-bottom-sting .form-select, .hair-services-to-provide .form-select {
+.col-bottom-sting .form-control, .hair-services-to-provide .form-control {
 	width: 159px;
 	height: 34px;
 	background-color: #EEEEEE 0% 0% no-repeat padding-box;
@@ -1573,6 +1574,7 @@ justify-content: end;}
 	font-size: 15px;
 	text-align: center;
 	border: 0;
+	min-height: auto;
 }
 .hair-services-to-provide .form-select{min-width:312px}
 .working-hours{width:196px;}
