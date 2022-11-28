@@ -782,9 +782,6 @@ border-radius: 3px;
 
 }
 
-.setting-label {
-	min-width:200px;
-}
 .setting-control {
 	min-width: 360px;
 	padding-bottom: 25px;
@@ -1053,8 +1050,7 @@ border-radius: 3px;
 }
 
 .col-bottom-sting {
-	width: 165px;
-	margin-left: 4px;
+	width:159px;
 }
 .add-setting-modal .form-select {
 	background-color: #eeeeee;
@@ -1082,7 +1078,6 @@ border-radius: 3px;
 	border: 0;
 }
 
-.checkbox-btn-row{margin-bottom:7px;}
 .bottom-sting-checkbox .checkbox-row {
 	height: 34px;
 }
@@ -1545,8 +1540,13 @@ text-align: right;
 display: flex;
 justify-content: end;}
 .add-more a{margin-left: -50px}
+
+
+.setting-label {
+	min-width: 207px;
 }
 
+}
 
 .login-section .btn.pass-show {
 	right: 4px;
@@ -1571,8 +1571,30 @@ justify-content: end;}
 	opacity: 1;
 	line-height: 0;
 	font-size: 15px;
-	margin-bottom:7px;
 	text-align: center;
+	border: 0;
 }
 .hair-services-to-provide .form-select{min-width:312px}
 .working-hours{width:196px;}
+
+.col-bottom-sting-table tbody, .col-bottom-sting-table td, .col-bottom-sting-table tfoot, .col-bottom-sting-table th, .col-bottom-sting-table thead, .col-bottom-sting-table tr {
+	border: 0 !important;
+	font-family: Bebas Neue;
+}
+
+.font1.col-bottom-sting-table th {
+	font-size: 18px;
+	font-weight: 400;
+	padding-bottom:3px;
+}
+
+@media (max-width:767px) {
+.setting-control {
+	min-width: auto;
+	padding-bottom: 12px;
+	font-family: poppins;
+}
+.hair-services-to-provide .form-select {
+	min-width: 100%;
+}
+}
