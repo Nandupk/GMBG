@@ -401,6 +401,7 @@ tbody, td, tfoot, th, thead, tr {
 	font-size: 12px;
 	height: 21px;
 	display: flex;
+	margin: auto;
 	width: 100px;
 	align-items: center;
 	justify-content: center;
@@ -419,6 +420,7 @@ tbody, td, tfoot, th, thead, tr {
 .table-span.btn-Refund {
 	background-color: #f7f0a3 !important;
 	color: #801419;
+	font-weight: 600;
 }
 .order-manger-title {
 	font-size: 20px;
@@ -840,7 +842,9 @@ border-radius: 3px;
 	border-radius: 15px;
 }
 
-
+.manage-order-row .bg-dark {
+	background: #5c5c5c !important;
+}
 
 .no-img-profile {
 	width: 70px;
@@ -1649,6 +1653,8 @@ border-radius: 5px;
 	line-height: 21px;
 	box-shadow: 0px 3px 6px #00000029;
 }
+
+
 @media (max-width:767px) {
 .setting-control {
 	min-width: auto;
