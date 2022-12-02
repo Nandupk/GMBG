@@ -527,7 +527,6 @@ tbody, td, tfoot, th, thead, tr {
 .btn-bottom .btn{min-width: 150px; border-radius:30px}
 .Manage-booking-top-left a {
 	margin: 3px 0 3px 5px;
-	background: #FFF;
 	padding: 1px 15px;
 	border-radius: 8px;
 	text-decoration: none;
@@ -536,29 +535,7 @@ tbody, td, tfoot, th, thead, tr {
 	min-width: 80px;
 	text-align: center;
 }
-.Manage-booking-top-left a:nth-child(1) {
-	background:rgb(19,219,227,0.5);
-	color: #FFF
-}
-.Manage-booking-top-left a:nth-child(2) {
-	background: #B7B7B7 ;
-}
-.Manage-booking-top-left a:nth-child(3) {
-	background: #B9E9BE;
-}
 
-.Manage-booking-top-left a:nth-child(4) {
-	background: #FFB2B2 ;
-}
-.Manage-booking-top-left a:nth-child(5) {
-	background: #E08A00;
-}
-.Manage-booking-top-left a:nth-child(6) {
-	background: #FFFA65;
-}
-.Manage-booking-top-left a:nth-child(7) {
-	background: #FCF8D2 ;
-}
 
 .top-left-employee a {
 	min-width: 120px;
@@ -1431,13 +1408,7 @@ font-family:poppins
 	vertical-align: top;
 }
 
-.manage-booking-gb-1{background:#1e8387 !important}
-.manage-booking-gb-2{background:#b7b7b7 !important}
-.manage-booking-gb-3{background:#b9e9be !important}
-.manage-booking-gb-4{background:#ffb2b2 !important}
-.manage-booking-gb-5{background:#e08a00 !important}
-.manage-booking-gb-6{background:#fffa65 !important}
-.manage-booking-gb-7{background:#fcf8d2 !important}
+
 
 .employee-tab-bg1{background:#801419 !important}
 .employee-tab-bg2{background:#067e10 !important}
@@ -1574,6 +1545,30 @@ border-radius: 5px;
 }
 .bg-light {
 	background-color: #FFF8EB !important;
+}
+
+.legend-booking-bg{
+	background:rgb(19,219,227,0.5) !important ;
+	color: #FFF !important
+}
+.legend-not-started-bg{
+	background: #B7B7B7 !important ;
+}
+.legend-started-bg{
+	background: #B9E9BE !important ;
+}
+
+.legend-completed-bg{
+	background: #FFB2B2 !important ;
+}
+.legend-notes-bg{
+	background: #E08A00 !important ;
+}
+.legend-cancelled-bg{
+	background: #FFFA65 !important ;
+}
+.legend-rejected-bg{
+	background: #FCF8D2 !important ;
 }
 
 @media (min-width: 992px) {
