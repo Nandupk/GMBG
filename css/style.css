@@ -526,36 +526,38 @@ tbody, td, tfoot, th, thead, tr {
 .category-box-text{color: #767676}
 .btn-bottom .btn{min-width: 150px; border-radius:30px}
 .Manage-booking-top-left a {
-	margin: 3px 0 3px 12px;
+	margin: 3px 0 3px 5px;
 	background: #FFF;
-	padding:3px 15px;
-	border-radius: 30px;
+	padding: 1px 15px;
+	border-radius: 8px;
 	text-decoration: none;
 	color: #000;
 	font-size: 10px;
-	/* margin: ; */
+	min-width: 80px;
+	text-align: center;
 }
 .Manage-booking-top-left a:nth-child(1) {
-	background: #1e8387;
+	background:rgb(19,219,227,0.5);
+	color: #FFF
 }
 .Manage-booking-top-left a:nth-child(2) {
-	background: #b7b7b7;
+	background: #B7B7B7 ;
 }
 .Manage-booking-top-left a:nth-child(3) {
-	background: #b9e9be;
+	background: #B9E9BE;
 }
 
 .Manage-booking-top-left a:nth-child(4) {
-	background: #ffb2b2;
+	background: #FFB2B2 ;
 }
 .Manage-booking-top-left a:nth-child(5) {
-	background: #e08a00;
+	background: #E08A00;
 }
 .Manage-booking-top-left a:nth-child(6) {
-	background: #fffa65;
+	background: #FFFA65;
 }
 .Manage-booking-top-left a:nth-child(7) {
-	background: #fcf8d2;
+	background: #FCF8D2 ;
 }
 
 .top-left-employee a {
@@ -719,9 +721,9 @@ tbody, td, tfoot, th, thead, tr {
 .newbooking-just {
 	border-radius: 5px;
 	margin-top: 10px;
-	border-top: 1px solid;
-	width: 115.7%;
-	margin-left: -7.3%;
+	border-top: 1px solid #FFF;
+	width: 115.4%;
+	margin-left: -7.8%;
 	padding: 15px;
 	max-height: 300px;
 	position: relative;
