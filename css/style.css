@@ -543,32 +543,32 @@ tbody, td, tfoot, th, thead, tr {
 	color: #FFF;
 }
 
-.top-left-employee a:nth-child(2) {
-	background:#801419;
+.legend-checked-in-bg{
+	background:#801419  !important;
 }
 
-.top-left-employee a:nth-child(3) {
-	background:#067e10;
-}
-
-
-.top-left-employee a:nth-child(4) {
-	background:#7c7c7c;
+.legend-checked-out-bg{
+	background:#067E10  !important;
 }
 
 
-.top-left-employee a:nth-child(5) {
-	background:#8361c4;
+.legend-not-started-working-bg{
+	background:#7C7C7C !important;
+}
+
+
+.legend-did-not-check-bg{
+	background:#8361C4 !important ;
 }
 
 
 
-.top-left-employee-bottom.Manage-booking-top-left a:nth-child(3) {
+.legend-pending-bg{
 	background:#db7a27 !important;
 }
 
-.top-left-employee-bottom.Manage-booking-top-left a:nth-child(2) {
-	background:#2634d5;
+.legend-approved-bg{
+	background:#2634d5 !important;
 }
 .top-left-employee-bottom.Manage-booking-top-left a {
 	color: #FFF;
@@ -661,12 +661,13 @@ tbody, td, tfoot, th, thead, tr {
 	background-image:linear-gradient(to bottom,#801419,#801419) ;
 	}
 
-	.bookings-sidebaar-search .form-control {
+.bookings-sidebaar-search .form-control {
 	background: transparent;
 	font-size: 11px;
 	height: 43px;
 	padding-right: 36px;
 	box-shadow: none !important;
+	color: #FFF;
 }
 .bookings-sidebaar-search{position: relative;}
 .bookings-sidebaar-search button {
@@ -1410,13 +1411,6 @@ font-family:poppins
 
 
 
-.employee-tab-bg1{background:#801419 !important}
-.employee-tab-bg2{background:#067e10 !important}
-.employee-tab-bg3{background:#7c7c7c !important}
-.employee-tab-bg4{background:#8361c4 !important}
-.employee-tab-bg5{background:#2634d5 !important}
-.employee-tab-bg6{background:#db7a27 !important}
-
 .header-dropdwon .dropdown-menu {
 	background-color: #D05A5F;
 	border-radius: 0px 0px 20px 20px;
@@ -1547,7 +1541,7 @@ border-radius: 5px;
 	background-color: #FFF8EB !important;
 }
 
-.legend-booking-bg{
+.booking-legend-new-booking{
 	background:rgb(19,219,227,0.5) !important ;
 	color: #FFF !important
 }
@@ -1661,7 +1655,7 @@ border-radius: 5px;
 .reset-passwrod .submit-btn {
 	font-weight: 600;
 }
-
+.calendar-btn{font-size: 14px;}
 @media (max-width:767px) {
 .setting-control {
 	min-width: auto;
