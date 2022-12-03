@@ -462,6 +462,8 @@ tbody, td, tfoot, th, thead, tr {
 	border-radius: 5px;
 	font-size: 15px;
 	min-height: 152px;
+	max-width: 352px;
+	height: 170px;
 }
 .radius-top {
 	border-radius: 15px 0 0 0;
@@ -912,8 +914,18 @@ border-radius: 15px;
 .order-status-dropdown .dropdown-menu {
 	min-width: auto;
 	width: 114px;
+	inset: inherit !important;
+	transform: translate(18px, -8px) !important;
 }
-
+.order-status-dropdown button {
+	box-shadow: none !important;
+	position: relative;
+	z-index: 9999;
+}
+.order-status-dropdown .btn-danger.dropdown-toggle.show {
+	border-radius: 5px 0px 10px 10px;
+	box-shadow: 0px 3px 6px #00000029;
+}
 .ps__rail-y {
 	display: block;
 	opacity: 100;
@@ -1565,33 +1577,7 @@ border-radius: 5px;
 	background: #FCF8D2 !important ;
 }
 
-@media (min-width: 992px) {
-.box-round {
-	border-radius: 15px;
-	overflow: hidden;
-}
-.manage-bookings-sidebaar {
-	flex: 0 0 auto;
-	width: 22%;
-	padding-right: 0;
-}
-.manage-bookings-right{width:78%;}
-.add-new-pro-time .form-control {
-	min-width: 100px;
-}
 
-.tribe-card {
-  position: absolute;
-  right: 15px;
-}
-.add-more a{margin-left: -50px}
-
-
-.setting-label {
-	min-width: 207px;
-}
-
-}
 
 .login-section .btn.pass-show {
 	right: 4px;
@@ -1656,6 +1642,16 @@ border-radius: 5px;
 	font-weight: 600;
 }
 .calendar-btn{font-size: 14px;}
+.manage-order-detail .table-span {
+	min-width: 130px;
+	text-align: center;
+}
+.order-status-dropdown .dropdown-item:focus, .order-status-dropdown .dropdown-item:hover {
+	background-color: transparent;
+}
+.order-status-dropdown button {
+	box-shadow: none !important;
+}
 @media (max-width:767px) {
 .setting-control {
 	min-width: auto;
@@ -1664,5 +1660,38 @@ border-radius: 5px;
 }
 .hair-services-to-provide .form-select {
 	min-width: 100%;
+}
+
+
+}
+
+
+@media (min-width: 992px) {
+.box-round {
+	border-radius: 15px;
+	overflow: hidden;
+}
+.manage-bookings-sidebaar {
+	flex: 0 0 auto;
+	width: 22%;
+	padding-right: 0;
+}
+.manage-bookings-right{width:78%;}
+.add-new-pro-time .form-control {
+	min-width: 100px;
+}
+
+.tribe-card {
+  position: absolute;
+  right: 15px;
+}
+.add-more a{margin-left: -50px}
+
+
+.setting-label {
+	min-width: 207px;
+}
+.manage-order-bottom-top {
+	padding-left: 120px;
 }
 }
