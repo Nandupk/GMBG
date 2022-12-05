@@ -545,28 +545,31 @@ tbody, td, tfoot, th, thead, tr {
 	color: #FFF;
 }
 
-.legend-attendance-checked-in{
+.legend-checked-in-bg{
 	background:#801419  !important;
 }
 
-.legend-attendance-checked-out{
+.legend-checked-out-bg{
 	background:#067E10  !important;
 }
 
 
-.legend-attendance-not-started-working{
+.legend-not-started-working-bg{
 	background:#7C7C7C !important;
 }
 
 
-.legend-attendance-did-not-check{
+.legend-did-not-check-bg{
 	background:#8361C4 !important ;
 }
-.legend-leave-approved{
+
+
+
+.legend-pending-bg{
 	background:#db7a27 !important;
 }
 
-.legend-leave-pending{
+.legend-approved-bg{
 	background:#2634d5 !important;
 }
 .top-left-employee-bottom.Manage-booking-top-left a {
@@ -697,7 +700,7 @@ tbody, td, tfoot, th, thead, tr {
 
 .newbooking-just {
 	border-radius: 5px;
-	margin-top: 20px;
+	margin-top: 10px;
 	border-top: 1px solid #FFF;
 	width: 115.4%;
 	margin-left: -7.8%;
@@ -1648,41 +1651,6 @@ border-radius: 5px;
 }
 .order-status-dropdown button {
 	box-shadow: none !important;
-}
-
-
-
-.bookings-sidebaar-search .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
- color: #797979;
- opacity: 1; /* Firefox */
- 
-}
-.bookings-sidebaar-search .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: #797979;
-  opacity: 1; /* Firefox */
-
-}
-.bookings-sidebaar-search .form-control::-ms-input-placeholder { /* Microsoft Edge */
- color: #797979;
-  opacity: 1; /* Firefox */
-}
-
-.employoyeetab .box-row-flex-box-sub .font14 {
-	font-family: Bebas Neue;
-	font-size: 16px;
-}
-.employee-th{position: relative;}
-.employee-th::after {
-	content: "";
-	background: #313131;
-	width: 95px;
-	height: 7px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 3px;
-	z-index: 9;
-	border-radius:100px;
 }
 @media (max-width:767px) {
 .setting-control {

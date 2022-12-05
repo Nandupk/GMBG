@@ -66,15 +66,15 @@
       <div class="d-flex flex-wrap pt-3">
         <div class="Manage-booking-top-left poppins d-flex align-items-center flex-wrap top-left-employee">
           <div style="min-width:130px">Attendance Legend:</div>
-          <a href="#" class="legend-checked-in-bg">Checked In</a> 
-          <a href="#" class="legend-checked-out-bg">Checked out</a> 
-          <a href="#" class="legend-not-started-working-bg">Not Started Working</a>
-           <a href="#" class="legend-did-not-check-bg">Did not check in/out</a> 
+          <a href="#" class="legend-attendance-checked-in">Checked In</a> 
+          <a href="#" class="legend-attendance-checked-out">Checked out</a> 
+          <a href="#" class="legend-attendance-not-started-working">Not Started Working</a>
+           <a href="#" class="legend-attendance-did-not-check">Did not check in/out</a> 
          </div>
         <div class="Manage-booking-top-left poppins d-flex align-items-center flex-wrap  top-left-employee-bottom pt-1">
           <div style="min-width:130px">Leave Legend:</div>
-          <a href="#" class="legend-pending-bg">Pending</a> 
-          <a href="#" class="legend-approved-bg">Approved</a> </div>
+          <a href="#" class="legend-leave-pending">Pending</a> 
+          <a href="#" class="legend-leave-approved">Approved</a> </div>
       </div>
     </div>
     <div class="col-md-5 ">
@@ -242,7 +242,7 @@
           <div class="scrollbar-theme2 box-scrollbar employee-table">
      <table cellpadding="5" class="table-booking">
               <tr  class="timebox-row">
-                <th ><div style="width:70px" class="time-box">Employee</div></th>
+                <th class="employee-th" ><div style="width:80px" class="time-box">Employee</div></th>
                 <th> <div class="time-box">20 Jan</div></th>
                 <th><div class="time-box">21 Jan</div></th>
                 <th><div class="time-box">22 Jan</div></th>
@@ -254,7 +254,7 @@
               <tr class="box-row-flex">
                 <td>Bracken</td>
                 <td colspan="2" class="box-row-flex-box">
-                    <div class="box-row-flex-box-sub cursor-pointer legend-checked-in-bg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="box-row-flex-box-sub cursor-pointer legend-attendance-checked-out" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <div class="notes-box poppins">
                         <div class="font14"> Jason Lim</div>
                         <div class="d-flex justify-content-between">
@@ -427,7 +427,7 @@
               <tr class="box-row-flex">
                 <td>KC</td>
                 <td  class="box-row-flex-box ">
-                    <div class="box-row-flex-box-sub cursor-pointer legend-checked-out-bg" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    <div class="box-row-flex-box-sub cursor-pointer legend-attendance-checked-out" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                       <div class="notes-box poppins">
                         <div class="font14"> Jason Lim</div>
                         <div class="d-flex justify-content-between">
@@ -540,7 +540,7 @@
                     </div>
                  </td>
                  <td class="box-row-flex-box">
-                    <div class="box-row-flex-box-sub legend-pending-bg">
+                    <div class="box-row-flex-box-sub legend-attendance-checked-out">
                       <div class="notes-box poppins">
                         <div class="font14"> Jason Lim</div>
                         <div class="d-flex justify-content-between">
@@ -600,7 +600,7 @@
                             <tr class="box-row-flex">
                 <td>Keith</td>
                 <td  class="box-row-flex-box">
-                    <div class="box-row-flex-box-sub cursor-pointer legend-approved-bg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="box-row-flex-box-sub cursor-pointer legend-attendance-checked-out" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <div class="notes-box poppins">
                         <div class="font14"> Jason Lim</div>
                         <div class="d-flex justify-content-between">
